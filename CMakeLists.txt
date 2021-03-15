@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.17)
+project(cube3D C)
+set(CMAKE_C_STANDARD  99)
+#SET(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
+file(GLOB SOURCE_FILES *.c ./srcs/libft/*.c ./include/*.a ./include/*.h ./srcs/libft/*.h)
+add_executable(cube3D ${SOURCE_FILES})

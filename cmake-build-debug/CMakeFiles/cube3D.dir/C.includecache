@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/broplz/cube3D/include/cub3d.h
+../srcs/libft/libft.h
+/home/broplz/cube3D/srcs/libft/libft.h
+./mlx.h
+/home/broplz/cube3D/include/mlx.h
+mlx.h
+-
+fcntl.h
+-
+
+/home/broplz/cube3D/include/mlx.h
+
+/home/broplz/cube3D/parser.c
+./include/cub3d.h
+/home/broplz/cube3D/include/cub3d.h
+stdio.h
+-
+
+/home/broplz/cube3D/srcs/libft/libft.h
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+

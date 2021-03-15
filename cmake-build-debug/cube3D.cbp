@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cube3D"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/broplz/cube3D/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/broplz/cube3D/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/broplz/cube3D/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cube3D">
+				<Option output="/home/broplz/cube3D/cmake-build-debug/cube3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/broplz/cube3D/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cube3D"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cube3D/fast">
+				<Option output="/home/broplz/cube3D/cmake-build-debug/cube3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/broplz/cube3D/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cube3D/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/cube3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/broplz/cube3D/include/cub3d.h">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/include/libft.a">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/include/libmlx.a">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/include/libmlx_Linux.a">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/include/libmlx_x86_64.a">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/include/mlx.h">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/include/mlx_int.h">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/parser.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_atoi.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_bzero.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_calloc.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_isalnum.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_isalpha.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_isascii.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_isdigit.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_islower.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_isprint.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_isupper.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_itoa.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_lstadd_back.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_lstadd_front.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_lstclear.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_lstdelone.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_lstiter.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_lstlast.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_lstmap.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_lstnew.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_lstsize.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_memccpy.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_memchr.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_memcmp.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_memcpy.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_memmove.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_memset.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_newstring.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_putchar.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_putendl.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_putnbr.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_putstr.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_split.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strchr.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strcpy.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strdup.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strjoin.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strlcat.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strlcpy.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strlen.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strmapi.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strncmp.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strnstr.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strrchr.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_strtrim.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_substr.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_tolower.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_toupper.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/get_next_line.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/get_next_line_utils.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/libft.h">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
