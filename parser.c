@@ -74,11 +74,8 @@ int		ft_path_check(char *line)
 	int fd;
 
 	fd = open(line, O_RDONLY);
-	if (!fd)
-	{
-		close(fd);
+	if (fd < 0)
 		return (-1);
-	}
 	close(fd);
 	return (1);
 }
@@ -311,6 +308,7 @@ int		main(int argc, char **argv)
 		ft_param_parser(&all, line);
 //		printf("%s\t\t = %d\n", line, ft_param_parser(&all, line));
 	}
+	int asd;
 	ft_free_mem(list);
 	return (0);
 }

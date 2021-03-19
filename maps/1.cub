@@ -1,12 +1,11 @@
- WE /home/bwayfare/C_Project/cub3D/testWEST.xpm
-R 176 100
+ WE /home/broplz/cube3D/sprites/west.xpm
+R 176 102
+   NO /home/broplz/cube3D/sprites/north.xpm
 
-   NO /home/bwayfare/C_Project/cub3D/testNORTH.xpm 
+  EA /home/broplz/cube3D/sprites/east.xpm
+   S     /home/broplz/cube3D/sprites/lolaa.xpm
 
-  EA /home/bwayfare/C_Project/cub3D/testEAST.xpm
-   S     /home/bwayfare/C_Project/cub3D/testSPRITE.xpm
-
-     SO /home/bwayfare/C_Project/cub3D/testSOUTH.xpm
+     SO /home/broplz/cube3D/sprites/south.xpm
 
 
 
