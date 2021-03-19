@@ -1,21 +1,17 @@
-SO /home/bwayfare/C_Project/cub3D/testSOUTH.xpm
+ WE /home/bwayfare/C_Project/cub3D/testWEST.xpm
+R 176 100
 
+   NO /home/bwayfare/C_Project/cub3D/testNORTH.xpm 
 
-NO /home/bwayfare/C_Project/cub3D/testNORTH.xpm
-WE /home/bwayfare/C_Project/cub3D/testWEST.xpm
+  EA /home/bwayfare/C_Project/cub3D/testEAST.xpm
+   S     /home/bwayfare/C_Project/cub3D/testSPRITE.xpm
 
-EA /home/bwayfare/C_Project/cub3D/testEAST.xpm
-S     /home/bwayfare/C_Project/cub3D/testSPRITE.xpm
-
-
-
-R 0 100
-
- F 125, 125, 168
- C 125, 125, 168
+     SO /home/bwayfare/C_Project/cub3D/testSOUTH.xpm
 
 
 
+ F 125,125,  168
+ C 123,124,   169
 
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
