@@ -106,7 +106,31 @@
 		<Unit filename="/home/broplz/cube3D/srcs/ft_get_valid.c">
 			<Option target="cube3D"/>
 		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_if_def.c">
+			<Option target="cube3D"/>
+		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_init_all.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_map_anal.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_map_copy.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_map_init.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_map_parse.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_map_search.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_map_size.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_map_vw.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_par_parse.c">

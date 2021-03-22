@@ -36,10 +36,50 @@ CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o: ../include/mlx.h
 CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o: ../srcs/ft_get_valid.c
 CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o: ../srcs/libft/libft.h
 
+CMakeFiles/cube3D.dir/srcs/ft_if_def.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_if_def.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_if_def.c.o: ../srcs/ft_if_def.c
+CMakeFiles/cube3D.dir/srcs/ft_if_def.c.o: ../srcs/libft/libft.h
+
 CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o: ../include/cub3d.h
 CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o: ../include/mlx.h
 CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o: ../srcs/ft_init_all.c
 CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_map_anal.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_map_anal.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_map_anal.c.o: ../srcs/ft_map_anal.c
+CMakeFiles/cube3D.dir/srcs/ft_map_anal.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.o: ../srcs/ft_map_copy.c
+CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_map_init.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_map_init.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_map_init.c.o: ../srcs/ft_map_init.c
+CMakeFiles/cube3D.dir/srcs/ft_map_init.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_map_parse.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_map_parse.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_map_parse.c.o: ../srcs/ft_map_parse.c
+CMakeFiles/cube3D.dir/srcs/ft_map_parse.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_map_search.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_map_search.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_map_search.c.o: ../srcs/ft_map_search.c
+CMakeFiles/cube3D.dir/srcs/ft_map_search.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_map_size.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_map_size.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_map_size.c.o: ../srcs/ft_map_size.c
+CMakeFiles/cube3D.dir/srcs/ft_map_size.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.o: ../srcs/ft_map_vw.c
+CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.o: ../srcs/libft/libft.h
 
 CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o: ../include/cub3d.h
 CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o: ../include/mlx.h

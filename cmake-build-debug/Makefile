@@ -332,6 +332,33 @@ srcs/ft_get_valid.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.s
 .PHONY : srcs/ft_get_valid.c.s
 
+srcs/ft_if_def.o: srcs/ft_if_def.c.o
+
+.PHONY : srcs/ft_if_def.o
+
+# target to build an object file
+srcs/ft_if_def.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_if_def.c.o
+.PHONY : srcs/ft_if_def.c.o
+
+srcs/ft_if_def.i: srcs/ft_if_def.c.i
+
+.PHONY : srcs/ft_if_def.i
+
+# target to preprocess a source file
+srcs/ft_if_def.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_if_def.c.i
+.PHONY : srcs/ft_if_def.c.i
+
+srcs/ft_if_def.s: srcs/ft_if_def.c.s
+
+.PHONY : srcs/ft_if_def.s
+
+# target to generate assembly for a file
+srcs/ft_if_def.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_if_def.c.s
+.PHONY : srcs/ft_if_def.c.s
+
 srcs/ft_init_all.o: srcs/ft_init_all.c.o
 
 .PHONY : srcs/ft_init_all.o
@@ -358,6 +385,195 @@ srcs/ft_init_all.s: srcs/ft_init_all.c.s
 srcs/ft_init_all.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_init_all.c.s
 .PHONY : srcs/ft_init_all.c.s
+
+srcs/ft_map_anal.o: srcs/ft_map_anal.c.o
+
+.PHONY : srcs/ft_map_anal.o
+
+# target to build an object file
+srcs/ft_map_anal.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_anal.c.o
+.PHONY : srcs/ft_map_anal.c.o
+
+srcs/ft_map_anal.i: srcs/ft_map_anal.c.i
+
+.PHONY : srcs/ft_map_anal.i
+
+# target to preprocess a source file
+srcs/ft_map_anal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_anal.c.i
+.PHONY : srcs/ft_map_anal.c.i
+
+srcs/ft_map_anal.s: srcs/ft_map_anal.c.s
+
+.PHONY : srcs/ft_map_anal.s
+
+# target to generate assembly for a file
+srcs/ft_map_anal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_anal.c.s
+.PHONY : srcs/ft_map_anal.c.s
+
+srcs/ft_map_copy.o: srcs/ft_map_copy.c.o
+
+.PHONY : srcs/ft_map_copy.o
+
+# target to build an object file
+srcs/ft_map_copy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.o
+.PHONY : srcs/ft_map_copy.c.o
+
+srcs/ft_map_copy.i: srcs/ft_map_copy.c.i
+
+.PHONY : srcs/ft_map_copy.i
+
+# target to preprocess a source file
+srcs/ft_map_copy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.i
+.PHONY : srcs/ft_map_copy.c.i
+
+srcs/ft_map_copy.s: srcs/ft_map_copy.c.s
+
+.PHONY : srcs/ft_map_copy.s
+
+# target to generate assembly for a file
+srcs/ft_map_copy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.s
+.PHONY : srcs/ft_map_copy.c.s
+
+srcs/ft_map_init.o: srcs/ft_map_init.c.o
+
+.PHONY : srcs/ft_map_init.o
+
+# target to build an object file
+srcs/ft_map_init.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_init.c.o
+.PHONY : srcs/ft_map_init.c.o
+
+srcs/ft_map_init.i: srcs/ft_map_init.c.i
+
+.PHONY : srcs/ft_map_init.i
+
+# target to preprocess a source file
+srcs/ft_map_init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_init.c.i
+.PHONY : srcs/ft_map_init.c.i
+
+srcs/ft_map_init.s: srcs/ft_map_init.c.s
+
+.PHONY : srcs/ft_map_init.s
+
+# target to generate assembly for a file
+srcs/ft_map_init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_init.c.s
+.PHONY : srcs/ft_map_init.c.s
+
+srcs/ft_map_parse.o: srcs/ft_map_parse.c.o
+
+.PHONY : srcs/ft_map_parse.o
+
+# target to build an object file
+srcs/ft_map_parse.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_parse.c.o
+.PHONY : srcs/ft_map_parse.c.o
+
+srcs/ft_map_parse.i: srcs/ft_map_parse.c.i
+
+.PHONY : srcs/ft_map_parse.i
+
+# target to preprocess a source file
+srcs/ft_map_parse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_parse.c.i
+.PHONY : srcs/ft_map_parse.c.i
+
+srcs/ft_map_parse.s: srcs/ft_map_parse.c.s
+
+.PHONY : srcs/ft_map_parse.s
+
+# target to generate assembly for a file
+srcs/ft_map_parse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_parse.c.s
+.PHONY : srcs/ft_map_parse.c.s
+
+srcs/ft_map_search.o: srcs/ft_map_search.c.o
+
+.PHONY : srcs/ft_map_search.o
+
+# target to build an object file
+srcs/ft_map_search.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_search.c.o
+.PHONY : srcs/ft_map_search.c.o
+
+srcs/ft_map_search.i: srcs/ft_map_search.c.i
+
+.PHONY : srcs/ft_map_search.i
+
+# target to preprocess a source file
+srcs/ft_map_search.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_search.c.i
+.PHONY : srcs/ft_map_search.c.i
+
+srcs/ft_map_search.s: srcs/ft_map_search.c.s
+
+.PHONY : srcs/ft_map_search.s
+
+# target to generate assembly for a file
+srcs/ft_map_search.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_search.c.s
+.PHONY : srcs/ft_map_search.c.s
+
+srcs/ft_map_size.o: srcs/ft_map_size.c.o
+
+.PHONY : srcs/ft_map_size.o
+
+# target to build an object file
+srcs/ft_map_size.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_size.c.o
+.PHONY : srcs/ft_map_size.c.o
+
+srcs/ft_map_size.i: srcs/ft_map_size.c.i
+
+.PHONY : srcs/ft_map_size.i
+
+# target to preprocess a source file
+srcs/ft_map_size.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_size.c.i
+.PHONY : srcs/ft_map_size.c.i
+
+srcs/ft_map_size.s: srcs/ft_map_size.c.s
+
+.PHONY : srcs/ft_map_size.s
+
+# target to generate assembly for a file
+srcs/ft_map_size.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_size.c.s
+.PHONY : srcs/ft_map_size.c.s
+
+srcs/ft_map_vw.o: srcs/ft_map_vw.c.o
+
+.PHONY : srcs/ft_map_vw.o
+
+# target to build an object file
+srcs/ft_map_vw.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.o
+.PHONY : srcs/ft_map_vw.c.o
+
+srcs/ft_map_vw.i: srcs/ft_map_vw.c.i
+
+.PHONY : srcs/ft_map_vw.i
+
+# target to preprocess a source file
+srcs/ft_map_vw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.i
+.PHONY : srcs/ft_map_vw.c.i
+
+srcs/ft_map_vw.s: srcs/ft_map_vw.c.s
+
+.PHONY : srcs/ft_map_vw.s
+
+# target to generate assembly for a file
+srcs/ft_map_vw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.s
+.PHONY : srcs/ft_map_vw.c.s
 
 srcs/ft_par_parse.o: srcs/ft_par_parse.c.o
 
@@ -1928,9 +2144,33 @@ help:
 	@echo "... srcs/ft_get_valid.o"
 	@echo "... srcs/ft_get_valid.i"
 	@echo "... srcs/ft_get_valid.s"
+	@echo "... srcs/ft_if_def.o"
+	@echo "... srcs/ft_if_def.i"
+	@echo "... srcs/ft_if_def.s"
 	@echo "... srcs/ft_init_all.o"
 	@echo "... srcs/ft_init_all.i"
 	@echo "... srcs/ft_init_all.s"
+	@echo "... srcs/ft_map_anal.o"
+	@echo "... srcs/ft_map_anal.i"
+	@echo "... srcs/ft_map_anal.s"
+	@echo "... srcs/ft_map_copy.o"
+	@echo "... srcs/ft_map_copy.i"
+	@echo "... srcs/ft_map_copy.s"
+	@echo "... srcs/ft_map_init.o"
+	@echo "... srcs/ft_map_init.i"
+	@echo "... srcs/ft_map_init.s"
+	@echo "... srcs/ft_map_parse.o"
+	@echo "... srcs/ft_map_parse.i"
+	@echo "... srcs/ft_map_parse.s"
+	@echo "... srcs/ft_map_search.o"
+	@echo "... srcs/ft_map_search.i"
+	@echo "... srcs/ft_map_search.s"
+	@echo "... srcs/ft_map_size.o"
+	@echo "... srcs/ft_map_size.i"
+	@echo "... srcs/ft_map_size.s"
+	@echo "... srcs/ft_map_vw.o"
+	@echo "... srcs/ft_map_vw.i"
+	@echo "... srcs/ft_map_vw.s"
 	@echo "... srcs/ft_par_parse.o"
 	@echo "... srcs/ft_par_parse.i"
 	@echo "... srcs/ft_par_parse.s"

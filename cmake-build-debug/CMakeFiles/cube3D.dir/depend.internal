@@ -36,10 +36,50 @@ CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o
  /home/broplz/cube3D/include/mlx.h
  /home/broplz/cube3D/srcs/ft_get_valid.c
  /home/broplz/cube3D/srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/ft_if_def.c.o
+ /home/broplz/cube3D/include/cub3d.h
+ /home/broplz/cube3D/include/mlx.h
+ /home/broplz/cube3D/srcs/ft_if_def.c
+ /home/broplz/cube3D/srcs/libft/libft.h
 CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o
  /home/broplz/cube3D/include/cub3d.h
  /home/broplz/cube3D/include/mlx.h
  /home/broplz/cube3D/srcs/ft_init_all.c
+ /home/broplz/cube3D/srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/ft_map_anal.c.o
+ /home/broplz/cube3D/include/cub3d.h
+ /home/broplz/cube3D/include/mlx.h
+ /home/broplz/cube3D/srcs/ft_map_anal.c
+ /home/broplz/cube3D/srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.o
+ /home/broplz/cube3D/include/cub3d.h
+ /home/broplz/cube3D/include/mlx.h
+ /home/broplz/cube3D/srcs/ft_map_copy.c
+ /home/broplz/cube3D/srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/ft_map_init.c.o
+ /home/broplz/cube3D/include/cub3d.h
+ /home/broplz/cube3D/include/mlx.h
+ /home/broplz/cube3D/srcs/ft_map_init.c
+ /home/broplz/cube3D/srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/ft_map_parse.c.o
+ /home/broplz/cube3D/include/cub3d.h
+ /home/broplz/cube3D/include/mlx.h
+ /home/broplz/cube3D/srcs/ft_map_parse.c
+ /home/broplz/cube3D/srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/ft_map_search.c.o
+ /home/broplz/cube3D/include/cub3d.h
+ /home/broplz/cube3D/include/mlx.h
+ /home/broplz/cube3D/srcs/ft_map_search.c
+ /home/broplz/cube3D/srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/ft_map_size.c.o
+ /home/broplz/cube3D/include/cub3d.h
+ /home/broplz/cube3D/include/mlx.h
+ /home/broplz/cube3D/srcs/ft_map_size.c
+ /home/broplz/cube3D/srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.o
+ /home/broplz/cube3D/include/cub3d.h
+ /home/broplz/cube3D/include/mlx.h
+ /home/broplz/cube3D/srcs/ft_map_vw.c
  /home/broplz/cube3D/srcs/libft/libft.h
 CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o
  /home/broplz/cube3D/include/cub3d.h
