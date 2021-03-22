@@ -5,6 +5,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/broplz/cube3D/parser.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/parser.c.o"
+  "/home/broplz/cube3D/srcs/c_clr.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/c_clr.c.o"
+  "/home/broplz/cube3D/srcs/f_clr.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/f_clr.c.o"
+  "/home/broplz/cube3D/srcs/ft_color_check.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o"
+  "/home/broplz/cube3D/srcs/ft_free_mem.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_free_mem.c.o"
+  "/home/broplz/cube3D/srcs/ft_get_null.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_get_null.c.o"
+  "/home/broplz/cube3D/srcs/ft_get_valid.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o"
+  "/home/broplz/cube3D/srcs/ft_init_all.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o"
+  "/home/broplz/cube3D/srcs/ft_par_parse.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o"
+  "/home/broplz/cube3D/srcs/ft_param_parser.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_param_parser.c.o"
+  "/home/broplz/cube3D/srcs/ft_path_check.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o"
+  "/home/broplz/cube3D/srcs/ft_t_space.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o"
   "/home/broplz/cube3D/srcs/libft/ft_atoi.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/libft/ft_atoi.c.o"
   "/home/broplz/cube3D/srcs/libft/ft_bzero.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/libft/ft_bzero.c.o"
   "/home/broplz/cube3D/srcs/libft/ft_calloc.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/libft/ft_calloc.c.o"
@@ -54,6 +65,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/broplz/cube3D/srcs/libft/ft_toupper.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/libft/ft_toupper.c.o"
   "/home/broplz/cube3D/srcs/libft/get_next_line.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/libft/get_next_line.c.o"
   "/home/broplz/cube3D/srcs/libft/get_next_line_utils.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/libft/get_next_line_utils.c.o"
+  "/home/broplz/cube3D/srcs/p_cls.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/p_cls.c.o"
+  "/home/broplz/cube3D/srcs/p_pth.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/p_pth.c.o"
+  "/home/broplz/cube3D/srcs/p_res.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/p_res.c.o"
+  "/home/broplz/cube3D/srcs/w_pth.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/w_pth.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -79,18 +79,6 @@
 		<Unit filename="/home/broplz/cube3D/include/cub3d.h">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/cube3D/include/libft.a">
-			<Option target="cube3D"/>
-		</Unit>
-		<Unit filename="/home/broplz/cube3D/include/libmlx.a">
-			<Option target="cube3D"/>
-		</Unit>
-		<Unit filename="/home/broplz/cube3D/include/libmlx_Linux.a">
-			<Option target="cube3D"/>
-		</Unit>
-		<Unit filename="/home/broplz/cube3D/include/libmlx_x86_64.a">
-			<Option target="cube3D"/>
-		</Unit>
 		<Unit filename="/home/broplz/cube3D/include/mlx.h">
 			<Option target="cube3D"/>
 		</Unit>
@@ -98,6 +86,39 @@
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/parser.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/c_clr.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/f_clr.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_color_check.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_free_mem.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_get_null.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_get_valid.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_init_all.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_par_parse.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_param_parser.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_path_check.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_t_space.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_atoi.c">
@@ -248,6 +269,18 @@
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/libft/libft.h">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/p_cls.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/p_pth.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/p_res.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/w_pth.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/CMakeLists.txt">

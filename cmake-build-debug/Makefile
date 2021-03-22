@@ -170,6 +170,303 @@ parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/parser.c.s
 .PHONY : parser.c.s
 
+srcs/c_clr.o: srcs/c_clr.c.o
+
+.PHONY : srcs/c_clr.o
+
+# target to build an object file
+srcs/c_clr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/c_clr.c.o
+.PHONY : srcs/c_clr.c.o
+
+srcs/c_clr.i: srcs/c_clr.c.i
+
+.PHONY : srcs/c_clr.i
+
+# target to preprocess a source file
+srcs/c_clr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/c_clr.c.i
+.PHONY : srcs/c_clr.c.i
+
+srcs/c_clr.s: srcs/c_clr.c.s
+
+.PHONY : srcs/c_clr.s
+
+# target to generate assembly for a file
+srcs/c_clr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/c_clr.c.s
+.PHONY : srcs/c_clr.c.s
+
+srcs/f_clr.o: srcs/f_clr.c.o
+
+.PHONY : srcs/f_clr.o
+
+# target to build an object file
+srcs/f_clr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/f_clr.c.o
+.PHONY : srcs/f_clr.c.o
+
+srcs/f_clr.i: srcs/f_clr.c.i
+
+.PHONY : srcs/f_clr.i
+
+# target to preprocess a source file
+srcs/f_clr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/f_clr.c.i
+.PHONY : srcs/f_clr.c.i
+
+srcs/f_clr.s: srcs/f_clr.c.s
+
+.PHONY : srcs/f_clr.s
+
+# target to generate assembly for a file
+srcs/f_clr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/f_clr.c.s
+.PHONY : srcs/f_clr.c.s
+
+srcs/ft_color_check.o: srcs/ft_color_check.c.o
+
+.PHONY : srcs/ft_color_check.o
+
+# target to build an object file
+srcs/ft_color_check.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o
+.PHONY : srcs/ft_color_check.c.o
+
+srcs/ft_color_check.i: srcs/ft_color_check.c.i
+
+.PHONY : srcs/ft_color_check.i
+
+# target to preprocess a source file
+srcs/ft_color_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_color_check.c.i
+.PHONY : srcs/ft_color_check.c.i
+
+srcs/ft_color_check.s: srcs/ft_color_check.c.s
+
+.PHONY : srcs/ft_color_check.s
+
+# target to generate assembly for a file
+srcs/ft_color_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_color_check.c.s
+.PHONY : srcs/ft_color_check.c.s
+
+srcs/ft_free_mem.o: srcs/ft_free_mem.c.o
+
+.PHONY : srcs/ft_free_mem.o
+
+# target to build an object file
+srcs/ft_free_mem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_mem.c.o
+.PHONY : srcs/ft_free_mem.c.o
+
+srcs/ft_free_mem.i: srcs/ft_free_mem.c.i
+
+.PHONY : srcs/ft_free_mem.i
+
+# target to preprocess a source file
+srcs/ft_free_mem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_mem.c.i
+.PHONY : srcs/ft_free_mem.c.i
+
+srcs/ft_free_mem.s: srcs/ft_free_mem.c.s
+
+.PHONY : srcs/ft_free_mem.s
+
+# target to generate assembly for a file
+srcs/ft_free_mem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_mem.c.s
+.PHONY : srcs/ft_free_mem.c.s
+
+srcs/ft_get_null.o: srcs/ft_get_null.c.o
+
+.PHONY : srcs/ft_get_null.o
+
+# target to build an object file
+srcs/ft_get_null.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_get_null.c.o
+.PHONY : srcs/ft_get_null.c.o
+
+srcs/ft_get_null.i: srcs/ft_get_null.c.i
+
+.PHONY : srcs/ft_get_null.i
+
+# target to preprocess a source file
+srcs/ft_get_null.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_get_null.c.i
+.PHONY : srcs/ft_get_null.c.i
+
+srcs/ft_get_null.s: srcs/ft_get_null.c.s
+
+.PHONY : srcs/ft_get_null.s
+
+# target to generate assembly for a file
+srcs/ft_get_null.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_get_null.c.s
+.PHONY : srcs/ft_get_null.c.s
+
+srcs/ft_get_valid.o: srcs/ft_get_valid.c.o
+
+.PHONY : srcs/ft_get_valid.o
+
+# target to build an object file
+srcs/ft_get_valid.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o
+.PHONY : srcs/ft_get_valid.c.o
+
+srcs/ft_get_valid.i: srcs/ft_get_valid.c.i
+
+.PHONY : srcs/ft_get_valid.i
+
+# target to preprocess a source file
+srcs/ft_get_valid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.i
+.PHONY : srcs/ft_get_valid.c.i
+
+srcs/ft_get_valid.s: srcs/ft_get_valid.c.s
+
+.PHONY : srcs/ft_get_valid.s
+
+# target to generate assembly for a file
+srcs/ft_get_valid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.s
+.PHONY : srcs/ft_get_valid.c.s
+
+srcs/ft_init_all.o: srcs/ft_init_all.c.o
+
+.PHONY : srcs/ft_init_all.o
+
+# target to build an object file
+srcs/ft_init_all.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o
+.PHONY : srcs/ft_init_all.c.o
+
+srcs/ft_init_all.i: srcs/ft_init_all.c.i
+
+.PHONY : srcs/ft_init_all.i
+
+# target to preprocess a source file
+srcs/ft_init_all.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_init_all.c.i
+.PHONY : srcs/ft_init_all.c.i
+
+srcs/ft_init_all.s: srcs/ft_init_all.c.s
+
+.PHONY : srcs/ft_init_all.s
+
+# target to generate assembly for a file
+srcs/ft_init_all.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_init_all.c.s
+.PHONY : srcs/ft_init_all.c.s
+
+srcs/ft_par_parse.o: srcs/ft_par_parse.c.o
+
+.PHONY : srcs/ft_par_parse.o
+
+# target to build an object file
+srcs/ft_par_parse.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o
+.PHONY : srcs/ft_par_parse.c.o
+
+srcs/ft_par_parse.i: srcs/ft_par_parse.c.i
+
+.PHONY : srcs/ft_par_parse.i
+
+# target to preprocess a source file
+srcs/ft_par_parse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.i
+.PHONY : srcs/ft_par_parse.c.i
+
+srcs/ft_par_parse.s: srcs/ft_par_parse.c.s
+
+.PHONY : srcs/ft_par_parse.s
+
+# target to generate assembly for a file
+srcs/ft_par_parse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.s
+.PHONY : srcs/ft_par_parse.c.s
+
+srcs/ft_param_parser.o: srcs/ft_param_parser.c.o
+
+.PHONY : srcs/ft_param_parser.o
+
+# target to build an object file
+srcs/ft_param_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_param_parser.c.o
+.PHONY : srcs/ft_param_parser.c.o
+
+srcs/ft_param_parser.i: srcs/ft_param_parser.c.i
+
+.PHONY : srcs/ft_param_parser.i
+
+# target to preprocess a source file
+srcs/ft_param_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_param_parser.c.i
+.PHONY : srcs/ft_param_parser.c.i
+
+srcs/ft_param_parser.s: srcs/ft_param_parser.c.s
+
+.PHONY : srcs/ft_param_parser.s
+
+# target to generate assembly for a file
+srcs/ft_param_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_param_parser.c.s
+.PHONY : srcs/ft_param_parser.c.s
+
+srcs/ft_path_check.o: srcs/ft_path_check.c.o
+
+.PHONY : srcs/ft_path_check.o
+
+# target to build an object file
+srcs/ft_path_check.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o
+.PHONY : srcs/ft_path_check.c.o
+
+srcs/ft_path_check.i: srcs/ft_path_check.c.i
+
+.PHONY : srcs/ft_path_check.i
+
+# target to preprocess a source file
+srcs/ft_path_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_path_check.c.i
+.PHONY : srcs/ft_path_check.c.i
+
+srcs/ft_path_check.s: srcs/ft_path_check.c.s
+
+.PHONY : srcs/ft_path_check.s
+
+# target to generate assembly for a file
+srcs/ft_path_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_path_check.c.s
+.PHONY : srcs/ft_path_check.c.s
+
+srcs/ft_t_space.o: srcs/ft_t_space.c.o
+
+.PHONY : srcs/ft_t_space.o
+
+# target to build an object file
+srcs/ft_t_space.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o
+.PHONY : srcs/ft_t_space.c.o
+
+srcs/ft_t_space.i: srcs/ft_t_space.c.i
+
+.PHONY : srcs/ft_t_space.i
+
+# target to preprocess a source file
+srcs/ft_t_space.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_t_space.c.i
+.PHONY : srcs/ft_t_space.c.i
+
+srcs/ft_t_space.s: srcs/ft_t_space.c.s
+
+.PHONY : srcs/ft_t_space.s
+
+# target to generate assembly for a file
+srcs/ft_t_space.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_t_space.c.s
+.PHONY : srcs/ft_t_space.c.s
+
 srcs/libft/ft_atoi.o: srcs/libft/ft_atoi.c.o
 
 .PHONY : srcs/libft/ft_atoi.o
@@ -1493,6 +1790,114 @@ srcs/libft/get_next_line_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/libft/get_next_line_utils.c.s
 .PHONY : srcs/libft/get_next_line_utils.c.s
 
+srcs/p_cls.o: srcs/p_cls.c.o
+
+.PHONY : srcs/p_cls.o
+
+# target to build an object file
+srcs/p_cls.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/p_cls.c.o
+.PHONY : srcs/p_cls.c.o
+
+srcs/p_cls.i: srcs/p_cls.c.i
+
+.PHONY : srcs/p_cls.i
+
+# target to preprocess a source file
+srcs/p_cls.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/p_cls.c.i
+.PHONY : srcs/p_cls.c.i
+
+srcs/p_cls.s: srcs/p_cls.c.s
+
+.PHONY : srcs/p_cls.s
+
+# target to generate assembly for a file
+srcs/p_cls.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/p_cls.c.s
+.PHONY : srcs/p_cls.c.s
+
+srcs/p_pth.o: srcs/p_pth.c.o
+
+.PHONY : srcs/p_pth.o
+
+# target to build an object file
+srcs/p_pth.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/p_pth.c.o
+.PHONY : srcs/p_pth.c.o
+
+srcs/p_pth.i: srcs/p_pth.c.i
+
+.PHONY : srcs/p_pth.i
+
+# target to preprocess a source file
+srcs/p_pth.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/p_pth.c.i
+.PHONY : srcs/p_pth.c.i
+
+srcs/p_pth.s: srcs/p_pth.c.s
+
+.PHONY : srcs/p_pth.s
+
+# target to generate assembly for a file
+srcs/p_pth.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/p_pth.c.s
+.PHONY : srcs/p_pth.c.s
+
+srcs/p_res.o: srcs/p_res.c.o
+
+.PHONY : srcs/p_res.o
+
+# target to build an object file
+srcs/p_res.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/p_res.c.o
+.PHONY : srcs/p_res.c.o
+
+srcs/p_res.i: srcs/p_res.c.i
+
+.PHONY : srcs/p_res.i
+
+# target to preprocess a source file
+srcs/p_res.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/p_res.c.i
+.PHONY : srcs/p_res.c.i
+
+srcs/p_res.s: srcs/p_res.c.s
+
+.PHONY : srcs/p_res.s
+
+# target to generate assembly for a file
+srcs/p_res.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/p_res.c.s
+.PHONY : srcs/p_res.c.s
+
+srcs/w_pth.o: srcs/w_pth.c.o
+
+.PHONY : srcs/w_pth.o
+
+# target to build an object file
+srcs/w_pth.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/w_pth.c.o
+.PHONY : srcs/w_pth.c.o
+
+srcs/w_pth.i: srcs/w_pth.c.i
+
+.PHONY : srcs/w_pth.i
+
+# target to preprocess a source file
+srcs/w_pth.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/w_pth.c.i
+.PHONY : srcs/w_pth.c.i
+
+srcs/w_pth.s: srcs/w_pth.c.s
+
+.PHONY : srcs/w_pth.s
+
+# target to generate assembly for a file
+srcs/w_pth.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/w_pth.c.s
+.PHONY : srcs/w_pth.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1505,6 +1910,39 @@ help:
 	@echo "... parser.o"
 	@echo "... parser.i"
 	@echo "... parser.s"
+	@echo "... srcs/c_clr.o"
+	@echo "... srcs/c_clr.i"
+	@echo "... srcs/c_clr.s"
+	@echo "... srcs/f_clr.o"
+	@echo "... srcs/f_clr.i"
+	@echo "... srcs/f_clr.s"
+	@echo "... srcs/ft_color_check.o"
+	@echo "... srcs/ft_color_check.i"
+	@echo "... srcs/ft_color_check.s"
+	@echo "... srcs/ft_free_mem.o"
+	@echo "... srcs/ft_free_mem.i"
+	@echo "... srcs/ft_free_mem.s"
+	@echo "... srcs/ft_get_null.o"
+	@echo "... srcs/ft_get_null.i"
+	@echo "... srcs/ft_get_null.s"
+	@echo "... srcs/ft_get_valid.o"
+	@echo "... srcs/ft_get_valid.i"
+	@echo "... srcs/ft_get_valid.s"
+	@echo "... srcs/ft_init_all.o"
+	@echo "... srcs/ft_init_all.i"
+	@echo "... srcs/ft_init_all.s"
+	@echo "... srcs/ft_par_parse.o"
+	@echo "... srcs/ft_par_parse.i"
+	@echo "... srcs/ft_par_parse.s"
+	@echo "... srcs/ft_param_parser.o"
+	@echo "... srcs/ft_param_parser.i"
+	@echo "... srcs/ft_param_parser.s"
+	@echo "... srcs/ft_path_check.o"
+	@echo "... srcs/ft_path_check.i"
+	@echo "... srcs/ft_path_check.s"
+	@echo "... srcs/ft_t_space.o"
+	@echo "... srcs/ft_t_space.i"
+	@echo "... srcs/ft_t_space.s"
 	@echo "... srcs/libft/ft_atoi.o"
 	@echo "... srcs/libft/ft_atoi.i"
 	@echo "... srcs/libft/ft_atoi.s"
@@ -1652,6 +2090,18 @@ help:
 	@echo "... srcs/libft/get_next_line_utils.o"
 	@echo "... srcs/libft/get_next_line_utils.i"
 	@echo "... srcs/libft/get_next_line_utils.s"
+	@echo "... srcs/p_cls.o"
+	@echo "... srcs/p_cls.i"
+	@echo "... srcs/p_cls.s"
+	@echo "... srcs/p_pth.o"
+	@echo "... srcs/p_pth.i"
+	@echo "... srcs/p_pth.s"
+	@echo "... srcs/p_res.o"
+	@echo "... srcs/p_res.i"
+	@echo "... srcs/p_res.s"
+	@echo "... srcs/w_pth.o"
+	@echo "... srcs/w_pth.i"
+	@echo "... srcs/w_pth.s"
 .PHONY : help
 
 

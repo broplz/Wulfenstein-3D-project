@@ -6,6 +6,61 @@ CMakeFiles/cube3D.dir/parser.c.o: ../include/mlx.h
 CMakeFiles/cube3D.dir/parser.c.o: ../parser.c
 CMakeFiles/cube3D.dir/parser.c.o: ../srcs/libft/libft.h
 
+CMakeFiles/cube3D.dir/srcs/c_clr.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/c_clr.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/c_clr.c.o: ../srcs/c_clr.c
+CMakeFiles/cube3D.dir/srcs/c_clr.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/f_clr.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/f_clr.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/f_clr.c.o: ../srcs/f_clr.c
+CMakeFiles/cube3D.dir/srcs/f_clr.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o: ../srcs/ft_color_check.c
+CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_free_mem.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_free_mem.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_free_mem.c.o: ../srcs/ft_free_mem.c
+CMakeFiles/cube3D.dir/srcs/ft_free_mem.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_get_null.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_get_null.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_get_null.c.o: ../srcs/ft_get_null.c
+CMakeFiles/cube3D.dir/srcs/ft_get_null.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o: ../srcs/ft_get_valid.c
+CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o: ../srcs/ft_init_all.c
+CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o: ../srcs/ft_par_parse.c
+CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_param_parser.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_param_parser.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_param_parser.c.o: ../srcs/ft_param_parser.c
+CMakeFiles/cube3D.dir/srcs/ft_param_parser.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o: ../srcs/ft_path_check.c
+CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o: ../srcs/ft_t_space.c
+CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o: ../srcs/libft/libft.h
+
 CMakeFiles/cube3D.dir/srcs/libft/ft_atoi.c.o: ../srcs/libft/ft_atoi.c
 CMakeFiles/cube3D.dir/srcs/libft/ft_atoi.c.o: ../srcs/libft/libft.h
 
@@ -152,4 +207,24 @@ CMakeFiles/cube3D.dir/srcs/libft/get_next_line.c.o: ../srcs/libft/libft.h
 
 CMakeFiles/cube3D.dir/srcs/libft/get_next_line_utils.c.o: ../srcs/libft/get_next_line_utils.c
 CMakeFiles/cube3D.dir/srcs/libft/get_next_line_utils.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/p_cls.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/p_cls.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/p_cls.c.o: ../srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/p_cls.c.o: ../srcs/p_cls.c
+
+CMakeFiles/cube3D.dir/srcs/p_pth.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/p_pth.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/p_pth.c.o: ../srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/p_pth.c.o: ../srcs/p_pth.c
+
+CMakeFiles/cube3D.dir/srcs/p_res.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/p_res.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/p_res.c.o: ../srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/p_res.c.o: ../srcs/p_res.c
+
+CMakeFiles/cube3D.dir/srcs/w_pth.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/w_pth.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/w_pth.c.o: ../srcs/libft/libft.h
+CMakeFiles/cube3D.dir/srcs/w_pth.c.o: ../srcs/w_pth.c
 

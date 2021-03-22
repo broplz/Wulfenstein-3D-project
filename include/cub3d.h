@@ -47,7 +47,6 @@ typedef	struct 	s_co
 {
 	int			i;
 	int 		j;
-//	int			mflag;
 	int 		pflag;
 }				t_co;
 
@@ -70,12 +69,35 @@ typedef struct	s_check
 	int			sp;
 }				t_check;
 
+typedef struct	s_map
+{
+	char		**map;
+	int			len;
+	int			lst_size;
+}				t_map;
+
 typedef struct	s_all
 {
-//	char		**c_s_str;
+	t_map		map;
 	t_co		co;
 	t_params	params;
 	t_check		check;
 }				t_all;
+
+int		ft_init_all(t_all *all);
+int		ft_get_valid(t_all *all);
+int		ft_t_space(char **str);
+char	*ft_get_null(int *flag, int *pflag);
+int		ft_path_check(char *line);
+char 	*w_pth(int *flag, char **line, int *pflag);
+int		p_pth(t_all *all, char **line);
+int		ft_color_check(int r, int g, int b);
+int 	f_clr(t_all *all, char **line);
+int 	c_clr(t_all *all, char **line);
+int		p_cls(t_all *all, char **line);
+int		p_res(t_all *all, char **line);
+int		ft_param_parser(t_all *all, char *line);
+int		ft_free_mem(t_list **list);
+int		ft_par_parse(t_all *all, int fd, t_list **list);
 
 #endif

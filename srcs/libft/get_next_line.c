@@ -41,11 +41,11 @@ char		*gnl_buff_fill(int fd, char *buffer)
 	int		len;
 
 	len = 1;
-	if (!(tmp = (char *)malloc(BUFFER_SIZE + 1)))
+	if (!(tmp = (char *)malloc(1 + 1)))
 		return (NULL);
 	if (!buffer)
 	{
-		if ((len = read(fd, tmp, BUFFER_SIZE)) < 0)
+		if ((len = read(fd, tmp, 1)) < 0)
 		{
 			free(tmp);
 			tmp = NULL;
@@ -56,7 +56,7 @@ char		*gnl_buff_fill(int fd, char *buffer)
 	}
 	while (len && ft_strchr_gnl(buffer, '\n', 1) == 0)
 	{
-		len = read(fd, tmp, BUFFER_SIZE);
+		len = read(fd, tmp, 1);
 		tmp[len] = '\0';
 		buffer = ft_strjoin_gnl(buffer, tmp);
 	}
@@ -71,7 +71,7 @@ int			get_next_line(int fd, char **line)
 	int			len;
 	char		*tmp;
 
-	if (BUFFER_SIZE < 1 || fd < 0 || !line)
+	if (fd < 0 || !line)
 		return (-1);
 	if (!(buffer = gnl_buff_fill(fd, buffer)))
 		return (-1);

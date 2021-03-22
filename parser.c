@@ -1,314 +1,202 @@
 #include "./include/cub3d.h"
-#include <stdio.h>
+#include <stdio.h> // TODO НЕ ЗАБЫТЬ УДАЛИТЬ ЭТУ СТРОЧКУ
 
-int		ft_init_all(t_all *all)
+int 	ft_map_anal(char *line, char *head)
 {
-	all->check.we = 0;
-	all->check.sp = 0;
-	all->check.so = 0;
-	all->check.ea = 0;
-	all->check.no = 0;
-	all->check.c = 0;
-	all->check.f = 0;
-	all->check.r = 0;
-	all->params.colors.fb = -1;
-	all->params.colors.fg = -1;
-	all->params.colors.fr = -1;
-	all->params.colors.cr = -1;
-	all->params.colors.cg = -1;
-	all->params.colors.cb = -1;
-	all->params.res.x = 0;
-	all->params.res.y = 0;
-	all->params.path.no = NULL;
-	all->params.path.ea = NULL;
-	all->params.path.so = NULL;
-	all->params.path.sp = NULL;
-	all->params.path.we = NULL;
-	all->co.pflag = 1;
-//	all->co.mflag = 1;
-	all->co.i = 0;
-	all->co.j = 0;
+	static int		anal;
+	char			*right;
+
+	anal = 0;
+	while (*line)
+	{
+		right = head;
+		while (*right && *right != *line)
+		{
+			if (*line == 'N' || *line == 'W' || *line == 'E' || *line == 'S')
+			{
+				anal += 1;
+				break;
+			}
+			if (anal > 1)
+				return (-1);
+			right++;
+		}
+		if (*right == '\0')
+			return (-1);
+		line++;
+	}
 	return (1);
 }
 
-int		ft_get_valid(t_all *all)
+int		ft_map_copy(void *head, char *all, int len)
 {
-	return (all->check.sp + all->check.so + all->check.ea + all->check.no +
-	all->check.we + all->check.f + all->check.c + all->check.r);
-}
-
-int		t_space(char **str)
-{
-	int    i;
-	int    k;
+	int		i;
+	char	*content;
 
 	i = 0;
-	k = 0;
-
-	if (*str == NULL)
-		return (-1);
-	while ((*str)[i])
+	content = (char *)head;
+	while (i < len)
 	{
-		(*str)[k] = (*str)[i];
-		if ((*str)[i] == ' ')
+		if (content && i > 0 && *content)
 		{
-			while ((*str)[i + 1] == ' ')
-				i++;
+			all[i++] = *content++;
+			continue;
 		}
-		k++;
+		all[i] = ' ';
 		i++;
 	}
-	(*str)[k] = '\0';
 	return (1);
 }
 
-char	*ft_get_null(int *flag, int *pflag)
+int 	ft_map_search(t_all *all, char *line)
 {
-	*pflag = 0;
-	*flag = 0;
-	return (NULL);
-}
-
-int		ft_path_check(char *line)
-{
-	int fd;
-
-	fd = open(line, O_RDONLY);
-	if (fd < 0)
-		return (-1);
-	close(fd);
-	return (1);
-}
-
-char 	*w_pth(int *flag, char **line, int *pflag)
-{
-	int	len;
-
-	if (*flag == 1)
-		return (ft_get_null(flag, pflag));
-	len = ft_strlen(*line);
-	if (line[0][0] == 'S' && line[0][1] != ' ' && line[0][1] != 'O')
-		return (ft_get_null(flag, pflag));
-	else if (line[0][0] != 'S' && line[0][1] != ' ' && line[0][2] != ' ')
-		return (ft_get_null(flag, pflag));
-	if (line[0][len - 1] == ' ')
-		len--;
-	if (line[0][--len] != 'm' || line[0][--len] != 'p' ||
-		line[0][--len] != 'x' || line[0][--len] != '.' ||
-		ft_isalnum(line[0][--len]) != 1)
-		return (ft_get_null(flag, pflag));
-	if (line[0][0] == 'S' && line[0][1] == ' ')
-		(*line) += 2;
+	if (!line || *line == '\0')
+		return (1);
+	while (*line == ' ')
+		line++;
+	if ((*line) == '1')
+		return (1 + (all->co.pflag = 2) - 2);
 	else
-		(*line) += 3;
-	if (ft_path_check(*line) < 0)
-		return (ft_get_null(flag, pflag));
-	return (*line + ((*flag = 1) - 1));
+		return (-1 + (all->co.pflag = -1) + 1);
 }
 
-int		p_pth(t_all *all, char **line)
+int		ft_map_init(t_all *all, t_list *list, int len, int lst_size)
 {
-	int *flag;
+	int	i;
 
-	flag = &all->co.pflag;
-	if (line[0][0] == 'W' && line[0][1] == 'E')
-		all->params.path.we = w_pth(&(all->check.we), line, flag);
-	else if (line[0][0] == 'N' && line[0][1] == 'O')
-		all->params.path.no = w_pth(&(all->check.no), line, flag);
-	else if (line[0][0] == 'E' && line[0][1] == 'A')
-		all->params.path.ea = w_pth(&(all->check.ea), line, flag);
-	else if (line[0][0] == 'S' && line[0][1] == 'O')
-		all->params.path.so = w_pth(&(all->check.so), line, flag);
-	else if (line[0][0] == 'S' && line[0][1] == ' ')
-		all->params.path.sp = w_pth(&(all->check.sp), line, flag);
-	else
-		return (-1);
-	return (1);
-}
-
-int		ft_color_check(int r, int g, int b)
-{
-	if (!(r > -1 && r < 256))
-		return (-1);
-	if (!(g > -1 && r < 256))
-		return (-1);
-	if (!(b > -1 && r < 256))
-		return (-1);
-	return (1);
-}
-
-int 	f_clr(t_all *all, char **line)
-{
-	int com;
-
-	com = 0;
-	if (all->check.f == 1)
-		return (-1 + (all->co.pflag = 0));
-	while (*(*line))
+	i = 0;
+	while (i < lst_size - 1)
 	{
-		if (ft_isdigit(*(*line)) == 1 && com == 0)
-			all->params.colors.fr = ft_atoi(line);
-		if (*(*line) == ' ')
-			(*line)++;
-		else if (*(*line) == ',' && com < 3)
-		{
-			com++;
-			(*line)++;
-		}
-		if (ft_isdigit(*(*line)) == 1 && com == 1)
-			all->params.colors.fg = ft_atoi(line);
-		else if (ft_isdigit(*(*line)) == 1 && com == 2)
-			all->params.colors.fb = ft_atoi(line);
-	}
-	if ((ft_color_check(all->params.colors.fr,
-					all->params.colors.fg, all->params.colors.fb)) < 0)
-		return (-1 + (all->co.pflag = 0));
-	return (all->check.f = 1);
-}
-
-int 	c_clr(t_all *all, char **line)
-{
-	int com;
-
-	com = 0;
-	if (all->check.c == 1)
-		return (-1 + (all->co.pflag = 0));
-	while (*(*line))
-	{
-		if (ft_isdigit(*(*line)) == 1 && com == 0)
-			all->params.colors.cr = ft_atoi(line);
-		if (*(*line) == ' ')
-			(*line)++;
-		else if (*(*line) == ',' && com < 3)
-		{
-			com++;
-			(*line)++;
-		}
-		if (ft_isdigit(*(*line)) == 1 && com == 1)
-			all->params.colors.cg = ft_atoi(line);
-		else if (ft_isdigit(*(*line)) == 1 && com == 2)
-			all->params.colors.cb = ft_atoi(line);
-	}
-	if ((ft_color_check(all->params.colors.cr,
-						all->params.colors.cg, all->params.colors.cb)) < 0)
-		return (-1 + (all->co.pflag = 0));
-	return (all->check.c = 1);
-}
-
-int		p_cls(t_all *all, char **line)
-{
-	if (**line == 'F')
-	{
-		if (*(++(*line)) != ' ')
-			return (-1);
+		if (i == 0)
+			ft_map_copy(NULL, all->map.map[i], len);
 		else
-		{
-			(*line)++;
-			return (f_clr(all, line));
-		}
+			if (i != 0 && list) {
+				ft_map_copy(list->content, all->map.map[i], len);
+				list = list->next;
+			}
+		i++;
 	}
-	else if (**line == 'C')
-	{
-		if (*(++(*line)) != ' ')
-			return (-1);
-		else
-		{
-			(*line)++;
-			return (c_clr(all, line));
-		}
-	}
+	ft_map_copy(NULL, all->map.map[i], len);
+	return (1);
 }
 
-int		p_res(t_all *all, char **line)
+int		ft_map_vw(t_all *all)
 {
-	if (*(++(*line)) != ' ' || all->check.r == 1)
-		return (-1 + (all->co.pflag = 0));
-	if (ft_isdigit(*(++(*line))) == 1)
-		all->params.res.x = ft_atoi(line);
-	else
-		return (-1 + (all->co.pflag = 0));
-	if (ft_isdigit(*(++(*line))) == 1)
-		all->params.res.y = ft_atoi(line);
-	else
-		return (-1 + (all->co.pflag = 0));
-	while (*line && **line == ' ')
-		(*line)++;
-	if (**line)
-		return (-1 + (all->co.pflag = 0));
-	if (all->params.res.y < 1 || all->params.res.x < 1)
-		return (-1 + (all->co.pflag = 0));
-	return (all->check.r = 1);
-}
+	char	**array;
+	int		i;
+	int		j;
 
-int		ft_param_parser(t_all *all, char *line)
-{
-	t_space(&line);
-	if (ft_strlen(line) == 1)
-		return (-1);
-	while (line && *line)
+	i = 0;
+	j = 0;
+	array = all->map.map;
+	while (i < all->map.lst_size)
 	{
-		if (*line == ' ')
-			line++;
-		else if (*line == 'R')
-			return (p_res(all, &line));
-		else if (*line == 'F' || *line == 'C')
-			return (p_cls(all, &line));
-		else if (*line == 'N' || *line == 'W' || *line == 'E')
-			return (p_pth(all, &line));
-		else if (*line == 'S')
+		while (j < all->map.len)
 		{
-			if (*(line + 1) == 'O' || *(line + 1) == ' ')
-				return (p_pth(all, &line));
-			else
-				return (-1 + (all->co.pflag = 0));
-		} else
-			return (-1 + (all->co.pflag = 0));
+			if (array[i][j] == ' ')
+			{
+				if (i != 0 && j != 0 && !(array[i - 1][j - 1] == ' ' || array[i - 1][j - 1] == '1' || array[i - 1][j - 1] == '\0'))
+					return (-1);
+				if (i != 0 && !(array[i - 1][j] == ' ' || array[i - 1][j] == '1' || array[i - 1][j] == '\0'))
+					return (-1);
+				if (i != 0 && !(array[i - 1][j + 1] == ' ' || array[i - 1][j + 1] == '1' || array[i - 1][j + 1] == '\0'))
+					return (-1);
+				if (j != 0 && !(array[i][j - 1] == ' ' || array[i][j - 1] == '1' || array[i][j - 1] == '\0'))
+					return (-1);
+				if (!(array[i][j + 1] == ' ' || array[i][j + 1] == '1' || array[i][j + 1] == '\0'))
+					return (-1);
+				if (i != all->map.lst_size - 1 && j != 0 && !(array[i + 1][j - 1] == ' ' || array[i + 1][j - 1] == '1' || array[i + 1][j - 1] == '\0'))
+					return (-1);
+				if (i != all->map.lst_size - 1 && !(array[i + 1][j] == ' ' || array[i + 1][j] == '1' || array[i + 1][j] == '\0'))
+					return (-1);
+				if (i != all->map.lst_size - 1 && !(array[i + 1][j + 1] == ' ' || array[i + 1][j + 1] == '1' || array[i + 1][j + 1] == '\0'))
+					return (-1);
+			}
+			j++;
+		}
+		j = 0;
+		i++;
 	}
 	return (1);
 }
 
-int		ft_free_mem(t_list *list)
+int		ft_map_size(t_all *all, t_list *list)
 {
-	t_list	*temp;
+	int		i;
+	t_list	*head;
 
-	if (list == NULL)
+	i = 0;
+	all->map.len = 0;
+	all->map.lst_size = 0;
+	all->map.lst_size = ft_lstsize(list) + 2;
+	head = list;
+	if (!(all->map.map = ft_calloc(all->map.lst_size + 1, sizeof(char *))))
 		return (-1);
-	while (list->next)
+	while (list)
 	{
-		temp = list;
+		if (all->map.len < ft_strlen((char *)list->content))
+			all->map.len = ft_strlen((char *)list->content);
 		list = list->next;
-		free(temp->content);
-		free(temp);
 	}
-	free(list->content);
-	free(list);
+	all->map.len += 2;
+	while (i < all->map.lst_size)
+		if (!(all->map.map[i++] = ft_calloc(all->map.len + 1, sizeof(char))))
+			return (-1);
+	ft_map_init(all, head, all->map.len, all->map.lst_size);
+	printf("VALID ===> %d", ft_map_vw(all));
+	return (1);
+}
+
+int		ft_map_parse(t_all *all, int fd, t_list **list)
+{
+	char	*line;
+
+	while (get_next_line(fd, &line)	&& (ft_map_search(all, line) > 0))
+	{
+		if (!(ft_map_anal(line, "012WESN \0")))
+			return (all->co.pflag = 0);
+		if (all->co.pflag == 2)
+			ft_lstadd_back(list, ft_lstnew(line));
+		else
+			free(line);
+	}
+	if (all->co.pflag == 2)
+		ft_lstadd_back(list, ft_lstnew(line));
+	else
+		free(line);
+	ft_map_size(all, *list);
+	for(int i = 0; i < all->map.lst_size; i++)
+	{
+		for (int j = 0; j < all->map.len; j++)
+			printf("%c", all->map.map[i][j]);
+		printf("\n");
+	}
 	return (1);
 }
 
 int		main(int argc, char **argv)
 {
 	argc = 2;
-	argv[1] = "/home/broplz/cube3D/maps/1.cub";
+	argv[1] = "/home/broplz/cube3D/maps/2.cub";
+	//TODO УБРАТЬ ЭТУ ХУЙНЮ
 	t_all	all;
 	int		fd;
-	char	*line;
-	t_list	*list;
+	t_list *params;
+	t_list *map;
 
-	list = NULL;
+	params = NULL;
+	map = NULL;
 	fd = open(argv[1], O_RDONLY);
-	if (argc == 1)
-	{
-		write(1, ERROR_NO_MAP, sizeof(ERROR_NO_MAP));
-		return (-1);
-	}
+//	if (argc == 1)
+//	{
+//		write(1, ERROR_NO_MAP, sizeof(ERROR_NO_MAP));
+//		return (-1);
+//	}
 	ft_init_all(&all);
-	while (all.co.pflag && get_next_line(fd, &line) && ft_get_valid(&all) != 8)
-	{
-		ft_lstadd_back(&list, ft_lstnew(line));
-		ft_param_parser(&all, line);
-//		printf("%s\t\t = %d\n", line, ft_param_parser(&all, line));
-	}
-	int asd;
-	ft_free_mem(list);
+	ft_par_parse(&all, fd, &params);
+	ft_map_parse(&all, fd, &map);
+
+	int debug_stop; // TODO УДАЛИТЬ СТРОЧКУ ПОСЛЕ ВСЕХ ДЕЙСТВИЙ
+
 	return (0);
 }

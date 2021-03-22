@@ -12,7 +12,6 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# define BUFFER_SIZE 1
 
 # include <stdlib.h>
 # include <fcntl.h>
