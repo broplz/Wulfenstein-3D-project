@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:32:35 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/23 23:18:44 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/24 01:30:38 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int		ft_map_parse(t_all *all, int fd, t_list **list)
 {
 	char	*line;
 
+	line = NULL;
 	while (get_next_line(fd, &line) && (ft_map_search(all, line) > 0))
 	{
 		if (!(ft_map_soft_anal(line, "012WESN \0")))
@@ -23,12 +24,18 @@ int		ft_map_parse(t_all *all, int fd, t_list **list)
 		if (all->co.pflag == 2)
 			ft_lstadd_back(list, ft_lstnew(line));
 		else
+		{
 			free(line);
+			line = NULL;
+		}
 	}
 	if (all->co.pflag == 2)
 		ft_lstadd_back(list, ft_lstnew(line));
-	else
+	else if (line)
+	{
 		free(line);
+		line = NULL;
+	}
 	ft_map_size(all, *list);
 	ft_map_anal(all);
 	return (1);

@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:30:50 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/23 23:04:46 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/24 00:44:03 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ typedef struct	s_all
 	t_check		check;
 }				t_all;
 
-int				ft_init_all(t_all *all);
+void			ft_init_all(t_all *all);
 int				ft_get_valid(t_all *all);
 int				ft_t_space(char **str);
 char			*ft_get_null(int *flag, int *pflag);
@@ -119,6 +119,6 @@ int				ft_map_hard_anal(t_all *all, char **array, int i, int j);
 int				ft_map_anal(t_all *all);
 int				ft_map_size(t_all *all, t_list *list);
 int				ft_map_parse(t_all *all, int fd, t_list **list);
-void			ft_free_all(t_all all, t_list *map, t_list *params);
+void			ft_free_all(t_all all, t_list **map, t_list **params);
 
 #endif

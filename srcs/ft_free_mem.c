@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:31:43 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/23 23:04:46 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/24 01:14:43 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ int		ft_free_mem(t_list **list)
 {
 	t_list	*temp;
 
-	if (list == NULL)
+	if (*list == NULL)
 		return (-1);
-	while ((*list)->content && (*list)->next)
+	while ((*list)->next)
 	{
 		temp = *list;
 		*list = (*list)->next;

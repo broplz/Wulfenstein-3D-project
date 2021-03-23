@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:30:25 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/23 22:30:25 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/24 01:00:13 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ int		main(int argc, char **argv)
 //		return (-1);
 	ft_init_all(&all);
 	ft_par_parse(&all, fd, &params);
-	ft_map_parse(&all, fd, &map);
+	if (all.co.pflag)
+		ft_map_parse(&all, fd, &map);
 
 	int debug_stop; // TODO УДАЛИТЬ СТРОЧКУ ПОСЛЕ ВСЕХ ДЕЙСТВИЙ
 	for(int i = 0; all.co.pflag && i < all.map.lst_size; i++)
@@ -39,6 +40,6 @@ int		main(int argc, char **argv)
 			printf("%c", all.map.map[i][j]);
 		printf("\n");
 	}
-	ft_free_all(all, map, params);
+	ft_free_all(all, &map, &params);
 	return (0);
 }
