@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_map_soft_anal.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/23 22:32:51 by broplz            #+#    #+#             */
+/*   Updated: 2021/03/23 23:18:44 by broplz           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/cub3d.h"
 
-int 	ft_map_soft_anal(char *line, char *head)
+int		ft_map_soft_anal(char *line, char *head)
 {
 	static int		anal;
 	char			*right;
@@ -16,7 +28,7 @@ int 	ft_map_soft_anal(char *line, char *head)
 			if (*line == 'N' || *line == 'W' || *line == 'E' || *line == 'S')
 			{
 				anal += 1;
-				break;
+				break ;
 			}
 			right++;
 		}

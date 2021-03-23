@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_map_anal.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/23 22:32:03 by broplz            #+#    #+#             */
+/*   Updated: 2021/03/23 23:04:46 by broplz           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/cub3d.h"
 
 int		ft_map_anal(t_all *all)
@@ -15,7 +27,6 @@ int		ft_map_anal(t_all *all)
 		{
 			if (array[i][j] == ' ')
 			{
-				printf("Valid =======> ? %d\n", ft_map_hard_anal(all, array, i, j));
 				if (ft_map_hard_anal(all, array, i, j) < 1)
 					return (-1);
 			}
