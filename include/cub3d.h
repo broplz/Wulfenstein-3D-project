@@ -6,6 +6,7 @@
 #include "./mlx.h"
 #include <mlx.h>
 #include <fcntl.h>
+#include <stdio.h>
 
 typedef struct	s_data
 {
@@ -99,13 +100,14 @@ int		p_res(t_all *all, char **line);
 int		ft_param_parser(t_all *all, char *line);
 int		ft_free_mem(t_list **list);
 int		ft_par_parse(t_all *all, int fd, t_list **list);
-int 	ft_map_anal(char *line, char *head);
+int 	ft_map_soft_anal(char *line, char *head);
 int		ft_map_copy(void *head, char *all, int len);
 int 	ft_map_search(t_all *all, char *line);
 int		ft_map_init(t_all *all, t_list *list, int len, int lst_size);
-int		ft_if_def(t_all *all, char **array, int i, int j);
-int		ft_map_vw(t_all *all);
+int		ft_map_hard_anal(t_all *all, char **array, int i, int j);
+int		ft_map_anal(t_all *all);
 int		ft_map_size(t_all *all, t_list *list);
 int		ft_map_parse(t_all *all, int fd, t_list **list);
+void	ft_free_all(t_all all, t_list *map, t_list *params);
 
 #endif

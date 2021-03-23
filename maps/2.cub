@@ -1,17 +1,17 @@
- WE /home/broplz/cube3D/sprites/west.xpm
-   NO /home/broplz/cube3D/sprites/north.xpm
+ WE /home/broplz/cube3D/sprites/wood.xpm
+   NO /home/broplz/cube3D/sprites/bluestone.xpm
 
-  EA /home/broplz/cube3D/sprites/east.xpm
-   S     /home/broplz/cube3D/sprites/lolaa.xpm
+  EA /home/broplz/cube3D/sprites/eagle.xpm
+   S     /home/broplz/cube3D/sprites/pillar.xpm
 
-     SO /home/broplz/cube3D/sprites/south.xpm
+     SO /home/broplz/cube3D/sprites/redbrick.xpm
 
  F 125,125,  168
  C 123,124,   169
 R 100  10
 
 1111111111111
-1N100000N0001
+1N10000000001
 1000000000001
 1020202020201
 1111111111111

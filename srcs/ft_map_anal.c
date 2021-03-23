@@ -1,28 +1,28 @@
 #include "../include/cub3d.h"
 
-int 	ft_map_anal(char *line, char *head)
+int		ft_map_anal(t_all *all)
 {
-	static int		anal;
-	char			*right;
+	char	**array;
+	int		i;
+	int		j;
 
-	anal = 0;
-	while (*line)
+	i = 0;
+	j = 0;
+	array = all->map.map;
+	while (i < all->map.lst_size)
 	{
-		right = head;
-		while (*right && *right != *line)
+		while (j < all->map.len)
 		{
-			if (anal > 1)
-				return (0);
-			if (*line == 'N' || *line == 'W' || *line == 'E' || *line == 'S')
+			if (array[i][j] == ' ')
 			{
-				anal += 1;
-				break;
+				printf("Valid =======> ? %d\n", ft_map_hard_anal(all, array, i, j));
+				if (ft_map_hard_anal(all, array, i, j) < 1)
+					return (-1);
 			}
-			right++;
+			j++;
 		}
-		if (*right == '\0')
-			return (0);
-		line++;
+		j = 0;
+		i++;
 	}
 	return (1);
 }

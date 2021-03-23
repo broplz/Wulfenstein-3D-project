@@ -16,6 +16,8 @@ size_t	ft_strlen_gnl(char *str)
 {
 	const char	*s;
 
+	if (str == NULL)
+		return (-1);
 	s = str;
 	while (*s)
 		++s;

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char		*ft_substr_gnl(char *s, unsigned int start, size_t len)
+char		*ft_substr_gnl(const char *s, unsigned int start, size_t len)
 {
 	size_t		i;
 	size_t		j;
@@ -52,7 +52,7 @@ char		*gnl_buff_fill(int fd, char *buffer)
 			return (NULL);
 		}
 		tmp[len] = '\0';
-		buffer = ft_strdup(tmp);
+		buffer = ft_strdup_gnl(tmp);
 	}
 	while (len && ft_strchr_gnl(buffer, '\n', 1) == 0)
 	{

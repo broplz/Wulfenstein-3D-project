@@ -97,6 +97,9 @@
 		<Unit filename="/home/broplz/cube3D/srcs/ft_color_check.c">
 			<Option target="cube3D"/>
 		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_free_all.c">
+			<Option target="cube3D"/>
+		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_free_mem.c">
 			<Option target="cube3D"/>
 		</Unit>
@@ -106,9 +109,6 @@
 		<Unit filename="/home/broplz/cube3D/srcs/ft_get_valid.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/cube3D/srcs/ft_if_def.c">
-			<Option target="cube3D"/>
-		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_init_all.c">
 			<Option target="cube3D"/>
 		</Unit>
@@ -116,6 +116,9 @@
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_map_copy.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_map_hard_anal.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_map_init.c">
@@ -130,7 +133,7 @@
 		<Unit filename="/home/broplz/cube3D/srcs/ft_map_size.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/cube3D/srcs/ft_map_vw.c">
+		<Unit filename="/home/broplz/cube3D/srcs/ft_map_soft_anal.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_par_parse.c">

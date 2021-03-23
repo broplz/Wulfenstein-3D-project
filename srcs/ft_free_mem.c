@@ -6,7 +6,7 @@ int		ft_free_mem(t_list **list)
 
 	if (list == NULL)
 		return (-1);
-	while ((*list)->next)
+	while ((*list)->content && (*list)->next)
 	{
 		temp = *list;
 		*list = (*list)->next;

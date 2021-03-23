@@ -15,13 +15,9 @@ int		ft_param_parser(t_all *all, char *line)
 			return (p_cls(all, &line));
 		else if (*line == 'N' || *line == 'W' || *line == 'E')
 			return (p_pth(all, &line));
-		else if (*line == 'S')
-		{
-			if (*(line + 1) == 'O' || *(line + 1) == ' ')
+		else if (*line == 'S' && (*(line + 1) == 'O' || *(line + 1) == ' '))
 				return (p_pth(all, &line));
-			else
-				return (-1 + (all->co.pflag = 0));
-		} else
+		else
 			return (-1 + (all->co.pflag = 0));
 	}
 	return (1);

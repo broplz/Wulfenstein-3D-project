@@ -15,14 +15,14 @@ mlx.h
 -
 fcntl.h
 -
+stdio.h
+-
 
 /home/broplz/cube3D/include/mlx.h
 
-/home/broplz/cube3D/parser.c
-./include/cub3d.h
+/home/broplz/cube3D/srcs/ft_map_anal.c
+../include/cub3d.h
 /home/broplz/cube3D/include/cub3d.h
-stdio.h
--
 
 /home/broplz/cube3D/srcs/libft/libft.h
 stdlib.h

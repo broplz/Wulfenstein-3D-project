@@ -251,6 +251,33 @@ srcs/ft_color_check.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_color_check.c.s
 .PHONY : srcs/ft_color_check.c.s
 
+srcs/ft_free_all.o: srcs/ft_free_all.c.o
+
+.PHONY : srcs/ft_free_all.o
+
+# target to build an object file
+srcs/ft_free_all.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_all.c.o
+.PHONY : srcs/ft_free_all.c.o
+
+srcs/ft_free_all.i: srcs/ft_free_all.c.i
+
+.PHONY : srcs/ft_free_all.i
+
+# target to preprocess a source file
+srcs/ft_free_all.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_all.c.i
+.PHONY : srcs/ft_free_all.c.i
+
+srcs/ft_free_all.s: srcs/ft_free_all.c.s
+
+.PHONY : srcs/ft_free_all.s
+
+# target to generate assembly for a file
+srcs/ft_free_all.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_all.c.s
+.PHONY : srcs/ft_free_all.c.s
+
 srcs/ft_free_mem.o: srcs/ft_free_mem.c.o
 
 .PHONY : srcs/ft_free_mem.o
@@ -332,33 +359,6 @@ srcs/ft_get_valid.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.s
 .PHONY : srcs/ft_get_valid.c.s
 
-srcs/ft_if_def.o: srcs/ft_if_def.c.o
-
-.PHONY : srcs/ft_if_def.o
-
-# target to build an object file
-srcs/ft_if_def.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_if_def.c.o
-.PHONY : srcs/ft_if_def.c.o
-
-srcs/ft_if_def.i: srcs/ft_if_def.c.i
-
-.PHONY : srcs/ft_if_def.i
-
-# target to preprocess a source file
-srcs/ft_if_def.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_if_def.c.i
-.PHONY : srcs/ft_if_def.c.i
-
-srcs/ft_if_def.s: srcs/ft_if_def.c.s
-
-.PHONY : srcs/ft_if_def.s
-
-# target to generate assembly for a file
-srcs/ft_if_def.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_if_def.c.s
-.PHONY : srcs/ft_if_def.c.s
-
 srcs/ft_init_all.o: srcs/ft_init_all.c.o
 
 .PHONY : srcs/ft_init_all.o
@@ -439,6 +439,33 @@ srcs/ft_map_copy.s: srcs/ft_map_copy.c.s
 srcs/ft_map_copy.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.s
 .PHONY : srcs/ft_map_copy.c.s
+
+srcs/ft_map_hard_anal.o: srcs/ft_map_hard_anal.c.o
+
+.PHONY : srcs/ft_map_hard_anal.o
+
+# target to build an object file
+srcs/ft_map_hard_anal.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_hard_anal.c.o
+.PHONY : srcs/ft_map_hard_anal.c.o
+
+srcs/ft_map_hard_anal.i: srcs/ft_map_hard_anal.c.i
+
+.PHONY : srcs/ft_map_hard_anal.i
+
+# target to preprocess a source file
+srcs/ft_map_hard_anal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_hard_anal.c.i
+.PHONY : srcs/ft_map_hard_anal.c.i
+
+srcs/ft_map_hard_anal.s: srcs/ft_map_hard_anal.c.s
+
+.PHONY : srcs/ft_map_hard_anal.s
+
+# target to generate assembly for a file
+srcs/ft_map_hard_anal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_hard_anal.c.s
+.PHONY : srcs/ft_map_hard_anal.c.s
 
 srcs/ft_map_init.o: srcs/ft_map_init.c.o
 
@@ -548,32 +575,32 @@ srcs/ft_map_size.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_size.c.s
 .PHONY : srcs/ft_map_size.c.s
 
-srcs/ft_map_vw.o: srcs/ft_map_vw.c.o
+srcs/ft_map_soft_anal.o: srcs/ft_map_soft_anal.c.o
 
-.PHONY : srcs/ft_map_vw.o
+.PHONY : srcs/ft_map_soft_anal.o
 
 # target to build an object file
-srcs/ft_map_vw.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.o
-.PHONY : srcs/ft_map_vw.c.o
+srcs/ft_map_soft_anal.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_soft_anal.c.o
+.PHONY : srcs/ft_map_soft_anal.c.o
 
-srcs/ft_map_vw.i: srcs/ft_map_vw.c.i
+srcs/ft_map_soft_anal.i: srcs/ft_map_soft_anal.c.i
 
-.PHONY : srcs/ft_map_vw.i
+.PHONY : srcs/ft_map_soft_anal.i
 
 # target to preprocess a source file
-srcs/ft_map_vw.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.i
-.PHONY : srcs/ft_map_vw.c.i
+srcs/ft_map_soft_anal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_soft_anal.c.i
+.PHONY : srcs/ft_map_soft_anal.c.i
 
-srcs/ft_map_vw.s: srcs/ft_map_vw.c.s
+srcs/ft_map_soft_anal.s: srcs/ft_map_soft_anal.c.s
 
-.PHONY : srcs/ft_map_vw.s
+.PHONY : srcs/ft_map_soft_anal.s
 
 # target to generate assembly for a file
-srcs/ft_map_vw.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_vw.c.s
-.PHONY : srcs/ft_map_vw.c.s
+srcs/ft_map_soft_anal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_map_soft_anal.c.s
+.PHONY : srcs/ft_map_soft_anal.c.s
 
 srcs/ft_par_parse.o: srcs/ft_par_parse.c.o
 
@@ -2135,6 +2162,9 @@ help:
 	@echo "... srcs/ft_color_check.o"
 	@echo "... srcs/ft_color_check.i"
 	@echo "... srcs/ft_color_check.s"
+	@echo "... srcs/ft_free_all.o"
+	@echo "... srcs/ft_free_all.i"
+	@echo "... srcs/ft_free_all.s"
 	@echo "... srcs/ft_free_mem.o"
 	@echo "... srcs/ft_free_mem.i"
 	@echo "... srcs/ft_free_mem.s"
@@ -2144,9 +2174,6 @@ help:
 	@echo "... srcs/ft_get_valid.o"
 	@echo "... srcs/ft_get_valid.i"
 	@echo "... srcs/ft_get_valid.s"
-	@echo "... srcs/ft_if_def.o"
-	@echo "... srcs/ft_if_def.i"
-	@echo "... srcs/ft_if_def.s"
 	@echo "... srcs/ft_init_all.o"
 	@echo "... srcs/ft_init_all.i"
 	@echo "... srcs/ft_init_all.s"
@@ -2156,6 +2183,9 @@ help:
 	@echo "... srcs/ft_map_copy.o"
 	@echo "... srcs/ft_map_copy.i"
 	@echo "... srcs/ft_map_copy.s"
+	@echo "... srcs/ft_map_hard_anal.o"
+	@echo "... srcs/ft_map_hard_anal.i"
+	@echo "... srcs/ft_map_hard_anal.s"
 	@echo "... srcs/ft_map_init.o"
 	@echo "... srcs/ft_map_init.i"
 	@echo "... srcs/ft_map_init.s"
@@ -2168,9 +2198,9 @@ help:
 	@echo "... srcs/ft_map_size.o"
 	@echo "... srcs/ft_map_size.i"
 	@echo "... srcs/ft_map_size.s"
-	@echo "... srcs/ft_map_vw.o"
-	@echo "... srcs/ft_map_vw.i"
-	@echo "... srcs/ft_map_vw.s"
+	@echo "... srcs/ft_map_soft_anal.o"
+	@echo "... srcs/ft_map_soft_anal.i"
+	@echo "... srcs/ft_map_soft_anal.s"
 	@echo "... srcs/ft_par_parse.o"
 	@echo "... srcs/ft_par_parse.i"
 	@echo "... srcs/ft_par_parse.s"
