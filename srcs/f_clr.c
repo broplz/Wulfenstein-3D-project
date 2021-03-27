@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:31:23 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/24 00:36:19 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/27 16:46:40 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int		f_clr(t_all *all, char **line)
 			all->params.colors.fb = ft_atoi(line);
 	}
 	if ((ft_color_check(all->params.colors.fr,
-						all->params.colors.fg, all->params.colors.fb)) < 0)
+		all->params.colors.fg, all->params.colors.fb)) < 0)
 		return (-1 + (all->co.pflag = 0));
 	return (all->check.f = 1);
 }

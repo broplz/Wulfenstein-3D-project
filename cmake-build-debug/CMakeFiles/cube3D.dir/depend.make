@@ -21,6 +21,11 @@ CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o: ../include/mlx.h
 CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o: ../srcs/ft_color_check.c
 CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o: ../srcs/libft/libft.h
 
+CMakeFiles/cube3D.dir/srcs/ft_error_close.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_error_close.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_error_close.c.o: ../srcs/ft_error_close.c
+CMakeFiles/cube3D.dir/srcs/ft_error_close.c.o: ../srcs/libft/libft.h
+
 CMakeFiles/cube3D.dir/srcs/ft_free_all.c.o: ../include/cub3d.h
 CMakeFiles/cube3D.dir/srcs/ft_free_all.c.o: ../include/mlx.h
 CMakeFiles/cube3D.dir/srcs/ft_free_all.c.o: ../srcs/ft_free_all.c
@@ -101,10 +106,20 @@ CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o: ../include/mlx.h
 CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o: ../srcs/ft_path_check.c
 CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o: ../srcs/libft/libft.h
 
+CMakeFiles/cube3D.dir/srcs/ft_puterror.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_puterror.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_puterror.c.o: ../srcs/ft_puterror.c
+CMakeFiles/cube3D.dir/srcs/ft_puterror.c.o: ../srcs/libft/libft.h
+
 CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o: ../include/cub3d.h
 CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o: ../include/mlx.h
 CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o: ../srcs/ft_t_space.c
 CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o: ../srcs/libft/libft.h
+
+CMakeFiles/cube3D.dir/srcs/ft_valid_clr.c.o: ../include/cub3d.h
+CMakeFiles/cube3D.dir/srcs/ft_valid_clr.c.o: ../include/mlx.h
+CMakeFiles/cube3D.dir/srcs/ft_valid_clr.c.o: ../srcs/ft_valid_clr.c
+CMakeFiles/cube3D.dir/srcs/ft_valid_clr.c.o: ../srcs/libft/libft.h
 
 CMakeFiles/cube3D.dir/srcs/libft/ft_atoi.c.o: ../srcs/libft/ft_atoi.c
 CMakeFiles/cube3D.dir/srcs/libft/ft_atoi.c.o: ../srcs/libft/libft.h

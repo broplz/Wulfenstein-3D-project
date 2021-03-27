@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:31:58 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/24 01:30:46 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/27 13:12:35 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,5 @@ void	ft_init_all(t_all *all)
 	all->co.pflag = 1;
 	all->co.i = 0;
 	all->co.j = 0;
+	all->co.anal = 0;
 }

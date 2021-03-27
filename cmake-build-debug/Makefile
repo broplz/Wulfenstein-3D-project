@@ -251,6 +251,33 @@ srcs/ft_color_check.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_color_check.c.s
 .PHONY : srcs/ft_color_check.c.s
 
+srcs/ft_error_close.o: srcs/ft_error_close.c.o
+
+.PHONY : srcs/ft_error_close.o
+
+# target to build an object file
+srcs/ft_error_close.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_error_close.c.o
+.PHONY : srcs/ft_error_close.c.o
+
+srcs/ft_error_close.i: srcs/ft_error_close.c.i
+
+.PHONY : srcs/ft_error_close.i
+
+# target to preprocess a source file
+srcs/ft_error_close.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_error_close.c.i
+.PHONY : srcs/ft_error_close.c.i
+
+srcs/ft_error_close.s: srcs/ft_error_close.c.s
+
+.PHONY : srcs/ft_error_close.s
+
+# target to generate assembly for a file
+srcs/ft_error_close.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_error_close.c.s
+.PHONY : srcs/ft_error_close.c.s
+
 srcs/ft_free_all.o: srcs/ft_free_all.c.o
 
 .PHONY : srcs/ft_free_all.o
@@ -683,6 +710,33 @@ srcs/ft_path_check.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_path_check.c.s
 .PHONY : srcs/ft_path_check.c.s
 
+srcs/ft_puterror.o: srcs/ft_puterror.c.o
+
+.PHONY : srcs/ft_puterror.o
+
+# target to build an object file
+srcs/ft_puterror.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_puterror.c.o
+.PHONY : srcs/ft_puterror.c.o
+
+srcs/ft_puterror.i: srcs/ft_puterror.c.i
+
+.PHONY : srcs/ft_puterror.i
+
+# target to preprocess a source file
+srcs/ft_puterror.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_puterror.c.i
+.PHONY : srcs/ft_puterror.c.i
+
+srcs/ft_puterror.s: srcs/ft_puterror.c.s
+
+.PHONY : srcs/ft_puterror.s
+
+# target to generate assembly for a file
+srcs/ft_puterror.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_puterror.c.s
+.PHONY : srcs/ft_puterror.c.s
+
 srcs/ft_t_space.o: srcs/ft_t_space.c.o
 
 .PHONY : srcs/ft_t_space.o
@@ -709,6 +763,33 @@ srcs/ft_t_space.s: srcs/ft_t_space.c.s
 srcs/ft_t_space.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_t_space.c.s
 .PHONY : srcs/ft_t_space.c.s
+
+srcs/ft_valid_clr.o: srcs/ft_valid_clr.c.o
+
+.PHONY : srcs/ft_valid_clr.o
+
+# target to build an object file
+srcs/ft_valid_clr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_valid_clr.c.o
+.PHONY : srcs/ft_valid_clr.c.o
+
+srcs/ft_valid_clr.i: srcs/ft_valid_clr.c.i
+
+.PHONY : srcs/ft_valid_clr.i
+
+# target to preprocess a source file
+srcs/ft_valid_clr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_valid_clr.c.i
+.PHONY : srcs/ft_valid_clr.c.i
+
+srcs/ft_valid_clr.s: srcs/ft_valid_clr.c.s
+
+.PHONY : srcs/ft_valid_clr.s
+
+# target to generate assembly for a file
+srcs/ft_valid_clr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_valid_clr.c.s
+.PHONY : srcs/ft_valid_clr.c.s
 
 srcs/libft/ft_atoi.o: srcs/libft/ft_atoi.c.o
 
@@ -2162,6 +2243,9 @@ help:
 	@echo "... srcs/ft_color_check.o"
 	@echo "... srcs/ft_color_check.i"
 	@echo "... srcs/ft_color_check.s"
+	@echo "... srcs/ft_error_close.o"
+	@echo "... srcs/ft_error_close.i"
+	@echo "... srcs/ft_error_close.s"
 	@echo "... srcs/ft_free_all.o"
 	@echo "... srcs/ft_free_all.i"
 	@echo "... srcs/ft_free_all.s"
@@ -2210,9 +2294,15 @@ help:
 	@echo "... srcs/ft_path_check.o"
 	@echo "... srcs/ft_path_check.i"
 	@echo "... srcs/ft_path_check.s"
+	@echo "... srcs/ft_puterror.o"
+	@echo "... srcs/ft_puterror.i"
+	@echo "... srcs/ft_puterror.s"
 	@echo "... srcs/ft_t_space.o"
 	@echo "... srcs/ft_t_space.i"
 	@echo "... srcs/ft_t_space.s"
+	@echo "... srcs/ft_valid_clr.o"
+	@echo "... srcs/ft_valid_clr.i"
+	@echo "... srcs/ft_valid_clr.s"
 	@echo "... srcs/libft/ft_atoi.o"
 	@echo "... srcs/libft/ft_atoi.i"
 	@echo "... srcs/libft/ft_atoi.s"

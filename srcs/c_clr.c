@@ -36,7 +36,7 @@ int		c_clr(t_all *all, char **line)
 			all->params.colors.cb = ft_atoi(line);
 	}
 	if ((ft_color_check(all->params.colors.cr,
-						all->params.colors.cg, all->params.colors.cb)) < 0)
+		all->params.colors.cg, all->params.colors.cb)) < 0)
 		return (-1 + (all->co.pflag = 0));
 	return (all->check.c = 1);
 }

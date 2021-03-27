@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:30:50 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/24 00:44:03 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/27 18:19:18 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ typedef	struct	s_co
 	int			i;
 	int			j;
 	int			pflag;
+	int			anal;
 }				t_co;
 
 typedef struct	s_params
@@ -88,8 +89,15 @@ typedef struct	s_map
 	int			lst_size;
 }				t_map;
 
+typedef struct	s_pos
+{
+	int			x;
+	int			y;
+}				t_pos;
+
 typedef struct	s_all
 {
+	t_pos		pos;
 	t_map		map;
 	t_co		co;
 	t_params	params;
@@ -111,7 +119,7 @@ int				p_res(t_all *all, char **line);
 int				ft_param_parser(t_all *all, char *line);
 int				ft_free_mem(t_list **list);
 int				ft_par_parse(t_all *all, int fd, t_list **list);
-int				ft_map_soft_anal(char *line, char *head);
+int				ft_map_soft_anal(t_all *all, char *line, char *head);
 int				ft_map_copy(void *head, char *all, int len);
 int				ft_map_search(t_all *all, char *line);
 int				ft_map_init(t_all *all, t_list *list, int len, int lst_size);
@@ -120,5 +128,8 @@ int				ft_map_anal(t_all *all);
 int				ft_map_size(t_all *all, t_list *list);
 int				ft_map_parse(t_all *all, int fd, t_list **list);
 void			ft_free_all(t_all all, t_list **map, t_list **params);
+void			ft_put_error(const char *str);
+int				ft_error_close(const char *str);
+int				ft_valid_clr(char *str);
 
 #endif

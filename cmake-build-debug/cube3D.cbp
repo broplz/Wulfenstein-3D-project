@@ -97,6 +97,9 @@
 		<Unit filename="/home/broplz/cube3D/srcs/ft_color_check.c">
 			<Option target="cube3D"/>
 		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_error_close.c">
+			<Option target="cube3D"/>
+		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_free_all.c">
 			<Option target="cube3D"/>
 		</Unit>
@@ -145,7 +148,13 @@
 		<Unit filename="/home/broplz/cube3D/srcs/ft_path_check.c">
 			<Option target="cube3D"/>
 		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_puterror.c">
+			<Option target="cube3D"/>
+		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_t_space.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_valid_clr.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_atoi.c">

@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:33:11 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/23 22:33:11 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/27 18:24:26 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		ft_path_check(char *line)
 
 	fd = open(line, O_RDONLY);
 	if (fd < 0)
-		return (-1);
+		return (-1 + ft_error_close("Invalid path to sprites"));
 	close(fd);
 	return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:33:06 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/24 00:36:19 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/27 18:19:18 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int		ft_param_parser(t_all *all, char *line)
 		else if (*line == 'S' && (*(line + 1) == 'O' || *(line + 1) == ' '))
 			return (p_pth(all, &line));
 		else
-			return (-1 + (all->co.pflag = 0));
+			return (-1 + (all->co.pflag = 0) + ft_error_close("Param error"));
 	}
 	return (1);
 }

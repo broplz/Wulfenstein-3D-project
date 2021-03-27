@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:32:03 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/24 00:36:19 by broplz           ###   ########.fr       */
+/*   Updated: 2021/03/27 20:12:56 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		ft_map_anal(t_all *all)
 			if (array[i][j] == ' ')
 			{
 				if (ft_map_hard_anal(all, array, i, j) < 1)
-					return (-1);
+					return (-1 + ft_error_close("Invalid map"));
 			}
 			j++;
 		}
