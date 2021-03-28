@@ -143,32 +143,32 @@ cube3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/build
 .PHONY : cube3D/fast
 
-parser.o: parser.c.o
+main.o: main.c.o
 
-.PHONY : parser.o
+.PHONY : main.o
 
 # target to build an object file
-parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/parser.c.o
-.PHONY : parser.c.o
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/main.c.o
+.PHONY : main.c.o
 
-parser.i: parser.c.i
+main.i: main.c.i
 
-.PHONY : parser.i
+.PHONY : main.i
 
 # target to preprocess a source file
-parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/parser.c.i
-.PHONY : parser.c.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/main.c.i
+.PHONY : main.c.i
 
-parser.s: parser.c.s
+main.s: main.c.s
 
-.PHONY : parser.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/parser.c.s
-.PHONY : parser.c.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/main.c.s
+.PHONY : main.c.s
 
 srcs/c_clr.o: srcs/c_clr.c.o
 
@@ -305,6 +305,33 @@ srcs/ft_free_all.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_all.c.s
 .PHONY : srcs/ft_free_all.c.s
 
+srcs/ft_free_line.o: srcs/ft_free_line.c.o
+
+.PHONY : srcs/ft_free_line.o
+
+# target to build an object file
+srcs/ft_free_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_line.c.o
+.PHONY : srcs/ft_free_line.c.o
+
+srcs/ft_free_line.i: srcs/ft_free_line.c.i
+
+.PHONY : srcs/ft_free_line.i
+
+# target to preprocess a source file
+srcs/ft_free_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_line.c.i
+.PHONY : srcs/ft_free_line.c.i
+
+srcs/ft_free_line.s: srcs/ft_free_line.c.s
+
+.PHONY : srcs/ft_free_line.s
+
+# target to generate assembly for a file
+srcs/ft_free_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_free_line.c.s
+.PHONY : srcs/ft_free_line.c.s
+
 srcs/ft_free_mem.o: srcs/ft_free_mem.c.o
 
 .PHONY : srcs/ft_free_mem.o
@@ -412,6 +439,33 @@ srcs/ft_init_all.s: srcs/ft_init_all.c.s
 srcs/ft_init_all.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_init_all.c.s
 .PHONY : srcs/ft_init_all.c.s
+
+srcs/ft_main_parser.o: srcs/ft_main_parser.c.o
+
+.PHONY : srcs/ft_main_parser.o
+
+# target to build an object file
+srcs/ft_main_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_main_parser.c.o
+.PHONY : srcs/ft_main_parser.c.o
+
+srcs/ft_main_parser.i: srcs/ft_main_parser.c.i
+
+.PHONY : srcs/ft_main_parser.i
+
+# target to preprocess a source file
+srcs/ft_main_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_main_parser.c.i
+.PHONY : srcs/ft_main_parser.c.i
+
+srcs/ft_main_parser.s: srcs/ft_main_parser.c.s
+
+.PHONY : srcs/ft_main_parser.s
+
+# target to generate assembly for a file
+srcs/ft_main_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube3D.dir/build.make CMakeFiles/cube3D.dir/srcs/ft_main_parser.c.s
+.PHONY : srcs/ft_main_parser.c.s
 
 srcs/ft_map_anal.o: srcs/ft_map_anal.c.o
 
@@ -2231,9 +2285,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cube3D"
-	@echo "... parser.o"
-	@echo "... parser.i"
-	@echo "... parser.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... srcs/c_clr.o"
 	@echo "... srcs/c_clr.i"
 	@echo "... srcs/c_clr.s"
@@ -2249,6 +2303,9 @@ help:
 	@echo "... srcs/ft_free_all.o"
 	@echo "... srcs/ft_free_all.i"
 	@echo "... srcs/ft_free_all.s"
+	@echo "... srcs/ft_free_line.o"
+	@echo "... srcs/ft_free_line.i"
+	@echo "... srcs/ft_free_line.s"
 	@echo "... srcs/ft_free_mem.o"
 	@echo "... srcs/ft_free_mem.i"
 	@echo "... srcs/ft_free_mem.s"
@@ -2261,6 +2318,9 @@ help:
 	@echo "... srcs/ft_init_all.o"
 	@echo "... srcs/ft_init_all.i"
 	@echo "... srcs/ft_init_all.s"
+	@echo "... srcs/ft_main_parser.o"
+	@echo "... srcs/ft_main_parser.i"
+	@echo "... srcs/ft_main_parser.s"
 	@echo "... srcs/ft_map_anal.o"
 	@echo "... srcs/ft_map_anal.i"
 	@echo "... srcs/ft_map_anal.s"

@@ -16,5 +16,6 @@ char	*ft_get_null(int *flag, int *pflag)
 {
 	*pflag = 0;
 	*flag = 0;
+	ft_error_close("Param duplicates");
 	return (NULL);
 }

@@ -85,7 +85,7 @@
 		<Unit filename="/home/broplz/cube3D/include/mlx_int.h">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/cube3D/parser.c">
+		<Unit filename="/home/broplz/cube3D/main.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/c_clr.c">
@@ -103,6 +103,9 @@
 		<Unit filename="/home/broplz/cube3D/srcs/ft_free_all.c">
 			<Option target="cube3D"/>
 		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_free_line.c">
+			<Option target="cube3D"/>
+		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_free_mem.c">
 			<Option target="cube3D"/>
 		</Unit>
@@ -113,6 +116,9 @@
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_init_all.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/ft_main_parser.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/ft_map_anal.c">

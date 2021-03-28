@@ -4,16 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/broplz/cube3D/parser.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/parser.c.o"
+  "/home/broplz/cube3D/main.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/main.c.o"
   "/home/broplz/cube3D/srcs/c_clr.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/c_clr.c.o"
   "/home/broplz/cube3D/srcs/f_clr.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/f_clr.c.o"
   "/home/broplz/cube3D/srcs/ft_color_check.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o"
   "/home/broplz/cube3D/srcs/ft_error_close.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_error_close.c.o"
   "/home/broplz/cube3D/srcs/ft_free_all.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_free_all.c.o"
+  "/home/broplz/cube3D/srcs/ft_free_line.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_free_line.c.o"
   "/home/broplz/cube3D/srcs/ft_free_mem.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_free_mem.c.o"
   "/home/broplz/cube3D/srcs/ft_get_null.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_get_null.c.o"
   "/home/broplz/cube3D/srcs/ft_get_valid.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_get_valid.c.o"
   "/home/broplz/cube3D/srcs/ft_init_all.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_init_all.c.o"
+  "/home/broplz/cube3D/srcs/ft_main_parser.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_main_parser.c.o"
   "/home/broplz/cube3D/srcs/ft_map_anal.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_map_anal.c.o"
   "/home/broplz/cube3D/srcs/ft_map_copy.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_map_copy.c.o"
   "/home/broplz/cube3D/srcs/ft_map_hard_anal.c" "/home/broplz/cube3D/cmake-build-debug/CMakeFiles/cube3D.dir/srcs/ft_map_hard_anal.c.o"

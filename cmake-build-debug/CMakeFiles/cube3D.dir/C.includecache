@@ -20,11 +20,7 @@ stdio.h
 
 /home/broplz/cube3D/include/mlx.h
 
-/home/broplz/cube3D/srcs/ft_init_all.c
-../include/cub3d.h
-/home/broplz/cube3D/include/cub3d.h
-
-/home/broplz/cube3D/srcs/ft_map_soft_anal.c
+/home/broplz/cube3D/srcs/f_clr.c
 ../include/cub3d.h
 /home/broplz/cube3D/include/cub3d.h
 
