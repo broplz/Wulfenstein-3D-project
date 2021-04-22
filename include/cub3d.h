@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:30:50 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/28 23:21:04 by broplz           ###   ########.fr       */
+/*   Updated: 2021/04/22 23:20:17 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,37 @@
 # define CUB3D_H
 
 # include "../srcs/libft/libft.h"
-# include "./mlx.h"
-# include <mlx.h>
+# include "../../mlx-lib/mlx-linux/mlx.h"
+# include "../../mlx-lib/mlx-linux/mlx_int.h"
 # include <fcntl.h>
 # include <stdio.h>
+# include <math.h>
+# define W all->params.res.x
+# define H all->params.res.y
+# define WORLDMAP all.map.map
+# define WWORLDMAP all->map.map
+# define PAR all.params.par
+# define MAP all.params.map
+
+/* TODO =>	PARAM_PARSER start	<= */
+# define WEPA all->params.path.we
+# define WEST w_pth(&(all->check.we), line, flag)
+# define NOPA all->params.path.no
+# define NORTH w_pth(&(all->check.no), line, flag)
+# define EAPA all->params.path.ea
+# define EAST w_pth(&(all->check.ea), line, flag)
+# define SOPA all->params.path.so
+# define SOUTH w_pth(&(all->check.so), line, flag)
+# define SPPA all->params.path.sp
+# define SPRITES w_pth(&(all->check.sp), line, flag)
+/* TODO =>	PARAM_PARSER end	<= */
+
+# define screenWidth 640
+# define screenHeight 480
+# define texWidth 64
+# define texHeight 64
+# define mapWidth 24
+# define mapHeight 24
 
 typedef struct	s_data
 {
@@ -26,6 +53,8 @@ typedef struct	s_data
 	int			bits_per_pixel;
 	int			line_length;
 	int			endian;
+	void		*mlx;
+	void		*win;
 }				t_data;
 
 typedef struct	s_path
@@ -51,8 +80,8 @@ typedef struct	s_colors
 
 typedef struct	s_res
 {
-	int			x;
-	int			y;
+	long		x;
+	long		y;
 }				t_res;
 
 typedef	struct	s_co
@@ -61,6 +90,7 @@ typedef	struct	s_co
 	int			j;
 	int			pflag;
 	int			anal;
+	char		orient;
 }				t_co;
 
 typedef struct	s_params
@@ -68,6 +98,8 @@ typedef struct	s_params
 	t_colors	colors;
 	t_res		res;
 	t_path		path;
+	t_list		*map;
+	t_list		*par;
 }				t_params;
 
 typedef struct	s_check
@@ -89,6 +121,49 @@ typedef struct	s_map
 	int			lst_size;
 }				t_map;
 
+typedef struct	s_ray
+{
+	double		cameraX; // = 2 * x / (double)w - 1; //x-coordinate in camera space
+	double		rayDirX; // = dirX + planeX*cameraX;
+	double		rayDirY; // = dirY + planeY*cameraX;
+	int			mapX; // = int(posX);
+	int			mapY; // = int(posY);
+	double		sideDistX;
+	double		sideDistY;
+	double		deltaDistX; // = std::abs(1 / rayDirX);
+	double		deltaDistY; // = std::abs(1 / rayDirY);
+	double		perpWallDist;
+	int			stepX;
+	int			stepY;
+	int			color;
+	int			hit; // = 0; //was there a wall hit?
+	int			side; //was a NS or a EW wall hit?
+	int			lineHeight; // = (int)(h / perpWallDist);
+	int			drawStart; // = -lineHeight / 2 + h / 2;
+	int			drawEnd; // = lineHeight / 2 + h / 2;
+	int			texNum; // = worldMap[mapX][mapY] - 1; //1 subtracted from it so that texture 0 can be used!
+	double		wallX; //where exactly the wall was hit
+	int			texX; // = int(wallX * double(texWidth));
+	double		step; // = 1.0 * texHeight / lineHeight;
+	double		texPos; // = (drawStart - h / 2 + lineHeight / 2) * step;
+	int			texY; // = (int)texPos & (texHeight - 1);
+	double		frameTime; //= (time - oldTime) / 1000.0; //frametime is the time this frame has taken, in seconds
+	double		moveSpeed; // = frameTime * 5.0; //the constant value is in squares/second
+	double		rotSpeed; // = frameTime * 3.0; //the constant value is in radians/second
+	double		oldDirX; // = dirX;
+	double		oldPlaneX; // = planeX;
+}				t_ray;
+
+typedef struct	s_char
+{
+	double		posX;
+	double		posY;
+	double		dirX;
+	double		dirY;
+	double		planeX;
+	double		planeY;
+}				t_char;
+
 typedef struct	s_all
 {
 	t_data		data;
@@ -96,6 +171,8 @@ typedef struct	s_all
 	t_co		co;
 	t_params	params;
 	t_check		check;
+	t_char		character;
+	t_ray		ray;
 }				t_all;
 
 void			ft_init_all(t_all *all);
@@ -113,7 +190,7 @@ int				p_res(t_all *all, char **line);
 int				ft_param_parser(t_all *all, char *line);
 int				ft_free_mem(t_list **list);
 int				ft_free_line(char **line);
-void			ft_free_all(t_all all, t_list **map, t_list **params);
+void			ft_free_all(t_all *all , t_list **map, t_list **params);
 int				ft_par_parse(t_all *all, int fd, t_list **list);
 int				ft_map_soft_anal(t_all *all, char *line, char *head);
 int				ft_map_copy(void *head, char *all, int len);
@@ -126,6 +203,7 @@ int				ft_map_parse(t_all *all, int fd, t_list **list);
 void			ft_put_error(const char *str);
 int				ft_error_close(const char *str);
 int				ft_valid_clr(char *str);
-int				ft_main_parser(t_all all, int fd, int argc);
+int				ft_main_parser(t_all *all, int fd, int argc, t_list *par, t_list *map);
+int				draw(t_all *all);
 
 #endif

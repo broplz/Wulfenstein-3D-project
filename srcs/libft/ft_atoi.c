@@ -6,7 +6,7 @@
 /*   By: hcherrie <hcherrie@student.21-schoo>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 01:07:59 by hcherrie          #+#    #+#             */
-/*   Updated: 2020/11/17 01:08:06 by hcherrie         ###   ########.fr       */
+/*   Updated: 2021/04/08 15:41:26 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int			ft_atoi(char **str)
 	{
 		res = res * 10 + (**str - 48);
 		++(*str);
-		if ((res * negative) > MAX_INT)
+		if ((res * negative) > MAX_LONG)
 			return (-1);
 		if ((res * negative) < MIN_INT)
 			return (-1);

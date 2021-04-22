@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:31:58 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/27 13:12:35 by broplz           ###   ########.fr       */
+/*   Updated: 2021/04/22 15:37:36 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void	ft_init_all(t_all *all)
 	all->params.path.sp = NULL;
 	all->params.path.we = NULL;
 	all->map.map = NULL;
+	all->params.map = NULL;
+	all->params.par = NULL;
 	all->co.pflag = 1;
 	all->co.i = 0;
 	all->co.j = 0;

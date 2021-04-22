@@ -85,9 +85,6 @@
 		<Unit filename="/home/broplz/cube3D/include/mlx_int.h">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/cube3D/main.c">
-			<Option target="cube3D"/>
-		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/c_clr.c">
 			<Option target="cube3D"/>
 		</Unit>
@@ -164,6 +161,9 @@
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_atoi.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_atol.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/libft/ft_bzero.c">
@@ -311,6 +311,9 @@
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/libft/libft.h">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/home/broplz/cube3D/srcs/main.c">
 			<Option target="cube3D"/>
 		</Unit>
 		<Unit filename="/home/broplz/cube3D/srcs/p_cls.c">

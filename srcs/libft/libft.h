@@ -6,7 +6,7 @@
 /*   By: hcherrie <hcherrie@student.21-schoo>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 01:18:18 by hcherrie          #+#    #+#             */
-/*   Updated: 2021/03/02 20:08:40 by broplz           ###   ########.fr       */
+/*   Updated: 2021/04/08 15:43:46 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # define MIN_INT -2147483648
 # define C_MIN_INT "-2147483648"
 # define MAX_INT 2147483647
+# define MAX_LONG 4294967295
 
 typedef struct		s_list
 {
@@ -53,6 +54,7 @@ int					ft_isprint(int ch);
 int					ft_toupper(int ch);
 int					ft_tolower(int ch);
 int					ft_atoi(char **str);
+long				ft_atol(char **str);
 int					ft_isupper(int ch);
 int					ft_islower(int ch);
 char				*ft_strcpy(char *dst, const char *src);

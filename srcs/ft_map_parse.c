@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:32:35 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/28 23:19:18 by broplz           ###   ########.fr       */
+/*   Updated: 2021/04/22 23:33:32 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int		ft_map_parse(t_all *all, int fd, t_list **list)
 		ft_lstadd_back(list, ft_lstnew(line));
 	else if (line)
 		ft_free_line(&line);
+	if (all->co.anal == 0)
+		ft_error_close("add Player and Direction");
 	ft_map_size(all, *list);
 	ft_map_anal(all);
 	return (1);

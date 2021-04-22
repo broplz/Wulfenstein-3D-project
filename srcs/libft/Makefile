@@ -27,6 +27,7 @@ SRCS	=	$(DIR)ft_memset.c \
 			$(DIR)ft_strnstr.c \
 			$(DIR)ft_strncmp.c \
 			$(DIR)ft_atoi.c \
+			$(DIR)ft_atol.c \
 			$(DIR)ft_isalpha.c \
 			$(DIR)ft_isdigit.c \
 			$(DIR)ft_isalnum.c \

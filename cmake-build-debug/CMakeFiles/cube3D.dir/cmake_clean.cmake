@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cube3D.dir/main.c.o"
   "CMakeFiles/cube3D.dir/srcs/c_clr.c.o"
   "CMakeFiles/cube3D.dir/srcs/f_clr.c.o"
   "CMakeFiles/cube3D.dir/srcs/ft_color_check.c.o"
@@ -26,6 +25,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o"
   "CMakeFiles/cube3D.dir/srcs/ft_valid_clr.c.o"
   "CMakeFiles/cube3D.dir/srcs/libft/ft_atoi.c.o"
+  "CMakeFiles/cube3D.dir/srcs/libft/ft_atol.c.o"
   "CMakeFiles/cube3D.dir/srcs/libft/ft_bzero.c.o"
   "CMakeFiles/cube3D.dir/srcs/libft/ft_calloc.c.o"
   "CMakeFiles/cube3D.dir/srcs/libft/ft_isalnum.c.o"
@@ -74,6 +74,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cube3D.dir/srcs/libft/ft_toupper.c.o"
   "CMakeFiles/cube3D.dir/srcs/libft/get_next_line.c.o"
   "CMakeFiles/cube3D.dir/srcs/libft/get_next_line_utils.c.o"
+  "CMakeFiles/cube3D.dir/srcs/main.c.o"
   "CMakeFiles/cube3D.dir/srcs/p_cls.c.o"
   "CMakeFiles/cube3D.dir/srcs/p_pth.c.o"
   "CMakeFiles/cube3D.dir/srcs/p_res.c.o"

@@ -6,31 +6,17 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/28 23:24:16 by broplz            #+#    #+#             */
-/*   Updated: 2021/03/28 23:24:16 by broplz           ###   ########.fr       */
+/*   Updated: 2021/04/22 19:37:06 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/cub3d.h"
 
-int		ft_main_parser(t_all all, int fd, int argc)
+int		ft_main_parser(t_all *all, int fd, int argc, t_list *par, t_list *map)
 {
-	t_list *params;
-	t_list *map;
-
-	params = NULL;
-	map = NULL;
-
-	if (argc == 1)
-		ft_error_close("Feed me with map");
-	ft_init_all(&all);
-	ft_par_parse(&all, fd, &params);
-	if (all.co.pflag)
-		ft_map_parse(&all, fd, &map);
-
-	for (int i = 0; i < ft_lstsize(map); i++) {
-		printf("%s\n", all.map.map[i]);
-	}
-	printf("%s\n", all.map.map[ft_lstsize(map)]);
-	ft_free_all(all, &map, &params);
-	return (0);
+	ft_par_parse(all, fd, &par);
+	if (all->co.pflag)
+		ft_map_parse(all, fd, &map);
+	ft_free_all(NULL, &map, &par);
+	return (1);
 }
