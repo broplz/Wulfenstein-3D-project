@@ -14,6 +14,6 @@
 
 int		ft_get_valid(t_all *all)
 {
-	return (all->check.sp + all->check.so + all->check.ea + all->check.no +
-			all->check.we + all->check.f + all->check.c + all->check.r);
+	return (all->che.sp + all->che.so + all->che.ea + all->che.no +
+			all->che.we + all->che.f + all->che.c + all->che.r);
 }

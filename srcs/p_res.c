@@ -14,14 +14,14 @@
 
 int		p_res(t_all *all, char **line)
 {
-	if (*(++(*line)) == ' ' && all->check.r != 1)
+	if (*(++(*line)) == ' ' && all->che.r != 1)
 	{
 		if (ft_isdigit(*(++(*line))))
 		{
-			// TODO add new if() with W > MAX_LONG || W < MIN_LONG
-			W = ft_atol(line);
+			// TODO add new if() with W > MAX_LONG || H > MAX_LONG
+			W = (int)ft_atol(line);
 			if (ft_isdigit(*(++(*line))))
-				H = ft_atol(line);
+				H = (int)ft_atol(line);
 			if (*line && **line == ' ')
 				(*line)++;
 		}
@@ -30,5 +30,6 @@ int		p_res(t_all *all, char **line)
 	}
 	else
 		ft_error_close("Resolution duplicated");
-	all->check.r = 1;
+	all->che.r = 1;
+	return (1);
 }

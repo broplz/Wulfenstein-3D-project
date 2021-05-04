@@ -6,11 +6,11 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:30:25 by broplz            #+#    #+#             */
-/*   Updated: 2021/04/01 01:01:45 by broplz           ###   ########.fr       */
+/*   Updated: 2021/04/25 15:49:50 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./include/cub3d.h"
+#include "../include/cub3d.h"
 
 void            my_mlx_pixel_put(t_all *all, int x, int y, int color)
 {
@@ -170,9 +170,13 @@ int		main(int argc, char **argv)
 	int		x;
 //	W = 500;
 //	H = 500;
+	MAP = NULL;
+	PAR = NULL;
 
 	fd = open(argv[1], O_RDONLY);
-	ft_main_parser(&all, fd, argc);
+	ft_init_all(&all);
+	ft_main_parser(&all,fd, PAR, MAP);
+
 	all.data.mlx = mlx_init();
 	all.data.win = mlx_new_window(all.data.mlx, 500, 500, "rot");
 	all.data.img = mlx_new_image(all.data.mlx, 500, 500);

@@ -21,6 +21,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cube3D.dir/srcs/ft_par_parse.c.o"
   "CMakeFiles/cube3D.dir/srcs/ft_param_parser.c.o"
   "CMakeFiles/cube3D.dir/srcs/ft_path_check.c.o"
+  "CMakeFiles/cube3D.dir/srcs/ft_pos_finder.c.o"
   "CMakeFiles/cube3D.dir/srcs/ft_puterror.c.o"
   "CMakeFiles/cube3D.dir/srcs/ft_t_space.c.o"
   "CMakeFiles/cube3D.dir/srcs/ft_valid_clr.c.o"

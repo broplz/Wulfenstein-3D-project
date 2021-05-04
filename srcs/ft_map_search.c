@@ -22,4 +22,5 @@ int		ft_map_search(t_all *all, char *line)
 		return (1 + (all->co.pflag = 2) - 2);
 	else
 		ft_error_close("String with trash before map");
+	return  (0);
 }

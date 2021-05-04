@@ -22,9 +22,9 @@ int		ft_par_parse(t_all *all, int fd, t_list **list)
 	while (all->co.pflag && ft_get_valid(all) != 8 && get_next_line(fd, &line)
 		&& (temp = line) && ft_param_parser(all, line))
 		ft_lstadd_back(list, ft_lstnew(temp));
-	if (all->params.colors.cb == -1 || all->params.colors.cg == -1
-		|| all->params.colors.cr == -1 || all->params.colors.fb == -1
-		|| all->params.colors.fg == -1 || all->params.colors.fr == -1)
+	if (all->par.col.cb == -1 || all->par.col.cg == -1
+		|| all->par.col.cr == -1 || all->par.col.fb == -1
+		|| all->par.col.fg == -1 || all->par.col.fr == -1)
 		ft_error_close("No color");
 	return (1);
 }

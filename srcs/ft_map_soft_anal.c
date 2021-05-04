@@ -15,13 +15,13 @@
 void	ft_get_ori(t_all *all, char ch)
 {
 	if (ch == 'W')
-		all->co.orient = 'W';
+		all->co.or = 'W';
 	if (ch == 'E')
-		all->co.orient = 'E';
+		all->co.or = 'E';
 	if (ch == 'S')
-		all->co.orient = 'S';
+		all->co.or = 'S';
 	if (ch == 'N')
-		all->co.orient = 'N';
+		all->co.or = 'N';
 }
 
 int		ft_map_soft_anal(t_all *all, char *line, char *head)

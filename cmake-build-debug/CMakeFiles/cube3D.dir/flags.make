@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = 
 
-C_FLAGS = -g -std=gnu99
+C_FLAGS = -lXext -lX11 -lm -lz -lbsd -g -std=gnu99
 

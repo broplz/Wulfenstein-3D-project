@@ -1,10 +1,10 @@
- WE /home/broplz/cube3D/sprites/west.xpm
-   NO /home/broplz/cube3D/sprites/north.xpm
+ WE /home/broplz/cube3D/spr/west.xpm
+   NO /home/broplz/cube3D/spr/north.xpm
 
-  EA /home/broplz/cube3D/sprites/east.xpm
-   S     /home/broplz/cube3D/sprites/lolaa.xpm
+  EA /home/broplz/cube3D/spr/east.xpm
+   S     /home/broplz/cube3D/spr/lolaa.xpm
 
-     SO /home/broplz/cube3D/sprites/south.xpm
+     SO /home/broplz/cube3D/spr/south.xpm
 
 
 R 176 102
