@@ -43,6 +43,8 @@ int		ft_map_soft_anal(t_all *all, char *line, char *head)
 			}
 			right++;
 		}
+		if (*line == '2')
+			all->spr.count++;
 		if (*right == '\0')
 			return (ft_error_close("Invalid map"));
 		line++;

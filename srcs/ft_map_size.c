@@ -26,7 +26,7 @@ int		ft_map_size(t_all *all, t_list *list)
 	while (list)
 	{
 		if (all->map.len < ft_strlen((char *)list->content))
-			all->map.len = ft_strlen((char *)list->content);
+			all->map.len = (int)ft_strlen((char *)list->content);
 		list = list->next;
 	}
 	all->map.len += 2;

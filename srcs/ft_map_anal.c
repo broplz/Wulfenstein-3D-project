@@ -12,6 +12,16 @@
 
 #include "../include/cub3d.h"
 
+void	ft_spr_cor(t_all *all, int i, int j)
+{
+	if (all->map.map[i][j] == '2' && all->spr.count)
+	{
+		all->spr.arr_spr[all->co.j].x = i + 0.5;
+		all->spr.arr_spr[all->co.j++].y = j + 0.5;
+//		printf("x = %d, y = %d\n", i, j);
+	}
+}
+
 int		ft_map_anal(t_all *all)
 {
 	char	**array;
@@ -20,7 +30,9 @@ int		ft_map_anal(t_all *all)
 
 	i = 0;
 	j = 0;
+	all->co.j = 0;
 	array = all->map.map;
+	all->spr.arr_spr = (t_spr *)malloc(all->spr.count * sizeof(t_spr));
 	while (i < all->map.lst_size)
 	{
 		while (j < all->map.len)
@@ -30,6 +42,7 @@ int		ft_map_anal(t_all *all)
 				if (ft_map_hard_anal(all, array, i, j) < 1)
 					return (-1 + ft_error_close("Invalid map"));
 			}
+			ft_spr_cor(all, i, j);
 			j++;
 		}
 		j = 0;

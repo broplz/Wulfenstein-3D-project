@@ -8,330 +8,335 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/broplz/broplz/cmake-build-debug"/>
+				<Option working_dir="/Users/hcherrie/Downloads/broplz 2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/broplz/broplz/cmake-build-debug"/>
+				<Option working_dir="/Users/hcherrie/Downloads/broplz 2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/broplz/broplz/cmake-build-debug"/>
+				<Option working_dir="/Users/hcherrie/Downloads/broplz 2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cube3D">
-				<Option output="/home/broplz/broplz/cmake-build-debug/cube3D" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/broplz/broplz/cmake-build-debug"/>
+				<Option output="/Users/hcherrie/Downloads/broplz 2/cmake-build-debug/cube3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hcherrie/Downloads/broplz 2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 cube3D"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 cube3D"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cube3D/fast">
-				<Option output="/home/broplz/broplz/cmake-build-debug/cube3D" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/broplz/broplz/cmake-build-debug"/>
+				<Option output="/Users/hcherrie/Downloads/broplz 2/cmake-build-debug/cube3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hcherrie/Downloads/broplz 2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 cube3D/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/broplz/broplz/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 cube3D/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/hcherrie/Downloads/broplz\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/broplz/broplz/include/cub3d.h">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/include/cub3d.h">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/include/mlx.h">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/include/mlx.h">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/include/mlx_int.h">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/include/mlx_int.h">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/c_clr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/c_clr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/f_clr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/f_clr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_color_check.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_color_check.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_error_close.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_error_close.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_free_all.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_free_all.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_free_line.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_free_line.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_free_mem.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_free_mem.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_get_null.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_get_null.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_get_valid.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_get_valid.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_init_all.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_init_all.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_main_parser.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_main_parser.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_map_anal.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_map_anal.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_map_copy.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_map_copy.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_map_hard_anal.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_map_hard_anal.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_map_init.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_map_init.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_map_parse.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_map_parse.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_map_search.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_map_search.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_map_size.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_map_size.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_map_soft_anal.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_map_soft_anal.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_par_parse.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_par_parse.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_param_parser.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_param_parser.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_path_check.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_path_check.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_pos_finder.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_pos_finder.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_puterror.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_puterror.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_t_space.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_t_space.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/ft_valid_clr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/ft_valid_clr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_atoi.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_atoi.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_atol.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_atol.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_bzero.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_bzero.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_calloc.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_calloc.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_isalnum.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_isalnum.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_isalpha.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_isalpha.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_isascii.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_isascii.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_isdigit.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_isdigit.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_islower.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_islower.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_isprint.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_isprint.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_isupper.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_isupper.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_itoa.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_itoa.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_lstadd_back.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_lstadd_back.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_lstadd_front.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_lstadd_front.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_lstclear.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_lstclear.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_lstdelone.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_lstdelone.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_lstiter.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_lstiter.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_lstlast.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_lstlast.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_lstmap.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_lstmap.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_lstnew.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_lstnew.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_lstsize.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_lstsize.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_memccpy.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_memccpy.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_memchr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_memchr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_memcmp.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_memcmp.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_memcpy.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_memcpy.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_memmove.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_memmove.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_memset.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_memset.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_newstring.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_newstring.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_putchar.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_putchar.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_putendl.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_putendl.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_putnbr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_putnbr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_putstr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_putstr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_split.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_split.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strchr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strchr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strcpy.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strcpy.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strdup.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strdup.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strjoin.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strjoin.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strlcat.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strlcat.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strlcpy.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strlcpy.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strlen.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strlen.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strmapi.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strmapi.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strncmp.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strncmp.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strnstr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strnstr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strrchr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strrchr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_strtrim.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_strtrim.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_substr.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_substr.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_tolower.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_tolower.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/ft_toupper.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/ft_toupper.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/get_next_line.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/get_next_line.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/get_next_line_utils.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/get_next_line_utils.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/libft/libft.h">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/libft/libft.h">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/main.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/main.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/p_cls.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/p_cls.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/p_pth.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/p_pth.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/p_res.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/p_res.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/srcs/w_pth.c">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/print.c">
 			<Option target="cube3D"/>
 		</Unit>
-		<Unit filename="/home/broplz/broplz/CMakeLists.txt">
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/srcs/w_pth.c">
+			<Option target="cube3D"/>
+		</Unit>
+		<Unit filename="/Users/hcherrie/Downloads/broplz 2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

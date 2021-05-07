@@ -14,6 +14,7 @@
 
 int		ft_error_close(const char *str)
 {
+	ft_putstr("Error\n");
 	ft_put_error(str);
 	exit(0);
 }

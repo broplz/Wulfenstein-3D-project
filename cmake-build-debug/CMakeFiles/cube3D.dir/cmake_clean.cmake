@@ -79,6 +79,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cube3D.dir/srcs/p_cls.c.o"
   "CMakeFiles/cube3D.dir/srcs/p_pth.c.o"
   "CMakeFiles/cube3D.dir/srcs/p_res.c.o"
+  "CMakeFiles/cube3D.dir/srcs/print.c.o"
   "CMakeFiles/cube3D.dir/srcs/w_pth.c.o"
   "cube3D"
   "cube3D.pdb"

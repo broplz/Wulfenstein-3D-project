@@ -18,7 +18,6 @@ int		p_res(t_all *all, char **line)
 	{
 		if (ft_isdigit(*(++(*line))))
 		{
-			// TODO add new if() with W > MAX_LONG || H > MAX_LONG
 			W = (int)ft_atol(line);
 			if (ft_isdigit(*(++(*line))))
 				H = (int)ft_atol(line);

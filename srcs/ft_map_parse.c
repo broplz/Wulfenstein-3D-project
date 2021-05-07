@@ -32,6 +32,8 @@ int		ft_map_parse(t_all *all, int fd, t_list **list)
 		ft_free_line(&line);
 	if (all->co.anal == 0)
 		ft_error_close("add Player and Direction");
+	if(all->spr.count && !(all->spr.arr_spr = (t_spr *)malloc(all->spr.count * sizeof(t_spr))))
+		ft_error_close("Malloc error");
 	ft_map_size(all, *list);
 	ft_map_anal(all);
 	return (1);

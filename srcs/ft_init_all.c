@@ -42,4 +42,5 @@ void	ft_init_all(t_all *all)
 	all->co.i = 0;
 	all->co.j = 0;
 	all->co.anal = 0;
+	all->spr.count = 0;
 }

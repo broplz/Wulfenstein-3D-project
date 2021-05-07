@@ -8,9 +8,9 @@ int		ft_pos_finder(t_all *all)
 	i = 0;
 	j = 0;
 
-	while (WWORLDMAP[i])
+	while (i < all->map.lst_size)
 	{
-		while (WWORLDMAP[i][j])
+		while (j < all->map.len)
 		{
 			if (WWORLDMAP[i][j] == 'W' ||
 				WWORLDMAP[i][j] == 'E' ||
@@ -29,30 +29,30 @@ int		ft_pos_finder(t_all *all)
 
 	if (all->co.or == 'N')
 	{
-		all->plr.dir_x = -1;
-		all->plr.dir_y = 0;
-		all->plr.plane_x = 0;
-		all->plr.plane_y = -0.66;
+		all->plr.dir_x = -1.0;
+		all->plr.dir_y = 0.0;
+		all->plr.plane_x = 0.0;
+		all->plr.plane_y = 0.66;
 	}
 	if (all->co.or == 'W')
 	{
-		all->plr.dir_x = 0;
-		all->plr.dir_y = -1;
+		all->plr.dir_x = 0.0;
+		all->plr.dir_y = -1.0;
 		all->plr.plane_x = -0.66;
-		all->plr.plane_y = 0;
+		all->plr.plane_y = 0.0;
 	}
 	if (all->co.or == 'E')
 	{
-		all->plr.dir_x = 0;
-		all->plr.dir_y = 1;
+		all->plr.dir_x = 0.0;
+		all->plr.dir_y = 1.0;
 		all->plr.plane_x = 0.66;
-		all->plr.plane_y = 0;
+		all->plr.plane_y = 0.0;
 	}
 	if (all->co.or == 'S')
 	{
-		all->plr.dir_x = 1;
-		all->plr.dir_y = 0;
-		all->plr.plane_x = 0;
+		all->plr.dir_x = 1.0;
+		all->plr.dir_y = 0.0;
+		all->plr.plane_x = 0.0;
 		all->plr.plane_y = -0.66;
 	}
 	return (0);

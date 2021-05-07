@@ -14,52 +14,68 @@
 # define CUB3D_H
 
 # include "../srcs/libft/libft.h"
-//# include "../include/mlx.h"
-//# include "../include/mlx_int.h"
-#include "../minilibx/mlx.h"
+# include "../minilibx_mms_20200219/mlx1.h"
 # include <fcntl.h>
 # include <stdio.h>
 # include <math.h>
 # define W all->par.res.x
 # define H all->par.res.y
-# define WORLDMAP all.map.map
 # define WWORLDMAP all->map.map
 # define PAR all.par.par
 # define MAP all.par.map
 
-/* TODO =>	PARAM_PARSER start	<= */
-# define WEPA all->params.path.we
-# define WEST w_pth(&(all->check.we), line, flag)
-# define NOPA all->params.path.no
-# define NORTH w_pth(&(all->check.no), line, flag)
-# define EAPA all->params.path.ea
-# define EAST w_pth(&(all->check.ea), line, flag)
-# define SOPA all->params.path.so
-# define SOUTH w_pth(&(all->check.so), line, flag)
-# define SPPA all->params.path.sp
-# define SPRITES w_pth(&(all->check.sp), line, flag)
-/* TODO =>	PARAM_PARSER end	<= */
-
 # define texWidth 64
 # define texHeight 64
-
-typedef struct	s_window
-{
-	void		*mlx;
-	void		*win;
-}				t_win;
-
 
 typedef struct	s_data
 {
 	void		*img;
 	char		*addr;
-	int			bts_per_pxl;
+	int			bpp;
 	int			ln_len;
 	int			endian;
 	void		*mlx;
 	void		*win;
 }				t_data;
+
+typedef struct s_tex
+{
+	void		*img;
+	char		*addr;
+	int			bpp;
+	int			ln_len;
+	int			endian;
+}				t_tex;
+
+typedef struct	s_tex_info
+{
+	t_tex 		tex;
+	int 		width;
+	int 		height;
+}				t_tex_info;
+
+typedef struct	s_spr
+{
+	double		dist;
+	double		x;
+	double		y;
+}				t_spr;
+
+typedef struct	s_all_spr
+{
+	t_tex		tex_spr;
+	t_spr		*arr_spr;
+	int			count;
+}				t_all_spr;
+
+typedef struct 	s_all_tex
+{
+	t_tex_info 	no;
+	t_tex_info 	so;
+	t_tex_info 	we;
+	t_tex_info 	ea;
+	t_tex_info 	obj;
+}				t_all_tex;
 
 typedef struct	s_keys
 {
@@ -131,12 +147,6 @@ typedef struct	s_check
 	int			sp;
 }				t_che;
 
-typedef struct	s_w_spr
-{
-	int			*texture;
-	double		x;
-	double		y;
-}				t_spr;
 
 typedef struct	s_map
 {
@@ -144,6 +154,28 @@ typedef struct	s_map
 	int			len;
 	int			lst_size;
 }				t_map;
+
+typedef struct	s_spr_cst
+{
+	double		spr_x;
+	double		spr_y;
+	int			*spr_ord;
+	double		spr_dis;
+	double		inv_det;
+	double		tfm_x;
+	double		tfm_y;
+	int			spr_scr_x;
+	int			spr_hei;
+	int			draw_start_y;
+	int			draw_end_y;
+	int			spr_wid;
+	int			draw_start_x;
+	int			draw_end_x;
+	int			tex_x;
+	int			tex_y;
+	unsigned int *color;
+	int			d;
+}				t_spr_cst;
 
 typedef struct	s_w_cst
 {
@@ -177,6 +209,7 @@ typedef struct	s_w_cst
 	double		old_plane_x; // = planeX;
 	double		pos_z;
 	double		raw_dist;
+	double		*z_buf;
 	unsigned int	*color;
 }				t_w_cst;
 
@@ -192,6 +225,7 @@ typedef struct	s_plr
 
 typedef struct	s_all
 {
+	t_spr_cst	spr_cst;
 	t_data		data;
 	t_map		map;
 	t_co		co;
@@ -199,9 +233,10 @@ typedef struct	s_all
 	t_che		che;
 	t_plr		plr;
 	t_w_cst		ray;
-	t_spr		spr;
+	t_all_spr	spr;
 	t_key		keys;
-	double		*z_buf;
+	t_all_tex 	tex;
+	t_tex_info	tex_inf;
 }				t_all;
 
 void			ft_init_all(t_all *all);
@@ -233,10 +268,16 @@ void			ft_put_error(const char *str);
 int				ft_error_close(const char *str);
 int				ft_valid_clr(char *str);
 int				ft_main_parser(t_all *all, int fd, t_list *par, t_list *map);
-int				draw(t_all *all);
 int				ft_pos_finder(t_all *all);
 int				cre_rgb(int r, int g, int b);
-int				ft_draw(t_all *all);
+void			ft_draw(t_all *all);
 void			ft_fl_ce_cst(t_all *all);
+void			get_textures_info(t_all *all);
+void			get_textures_addr(t_all *all);
+void get_img_spr(t_all *all);
+void get_addr_spr(t_all *all);
+
+
+void			ft_print(t_all *mprms);
 
 #endif
