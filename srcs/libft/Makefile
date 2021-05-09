@@ -71,7 +71,7 @@ OBJS_B	=	$(SRCS_B:.c=.o)
 .c.o:
 			$(CC) $(FLAGS) -c -I$(HEADER) $< -o $(<:.c=.o)
 
-all:		$(NAME)
+all:		$(NAME) bonus
 
 $(NAME):	$(OBJS)
 			$(LIB) $(OBJS)

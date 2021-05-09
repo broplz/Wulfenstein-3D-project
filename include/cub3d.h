@@ -6,7 +6,7 @@
 /*   By: broplz <broplz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 22:30:50 by broplz            #+#    #+#             */
-/*   Updated: 2021/04/30 22:04:08 by broplz           ###   ########.fr       */
+/*   Updated: 2021/05/08 02:14:42 by hcherrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define CUB3D_H
 
 # include "../srcs/libft/libft.h"
-# include "../minilibx_mms_20200219/mlx1.h"
+# include "../mlx/mlx1.h"
 # include <fcntl.h>
 # include <stdio.h>
 # include <math.h>
@@ -23,9 +23,11 @@
 # define WWORLDMAP all->map.map
 # define PAR all.par.par
 # define MAP all.par.map
-
-# define texWidth 64
-# define texHeight 64
+#define U_DIV 1
+#define V_DIV 1
+#define V_MOVE 0.0
+# define TEXWID 64
+# define TEXHIE 64
 
 typedef struct	s_data
 {
@@ -121,9 +123,11 @@ typedef	struct	s_co
 {
 	int			i;
 	int			j;
-	int			pflag;
+	int			par_fl;
 	int			anal;
 	char		or;
+	int			scr_fl;
+	int			map_fl;
 }				t_co;
 
 typedef struct	s_params
@@ -159,8 +163,6 @@ typedef struct	s_spr_cst
 {
 	double		spr_x;
 	double		spr_y;
-	int			*spr_ord;
-	double		spr_dis;
 	double		inv_det;
 	double		tfm_x;
 	double		tfm_y;
@@ -198,17 +200,12 @@ typedef struct	s_w_cst
 	int			draw_end; // = lineHeight / 2 + h / 2;
 	int			tex_num; // = worldMap[mapX][mapY] - 1; //1 subtracted from it so that texture 0 can be used!
 	double		wall_x; //where exactly the wall was hit
-	int			tex_x; // = int(wallX * double(texWidth));
-	int			tex_y; // = (int)texPos & (texHeight - 1);
-	double		step; // = 1.0 * texHeight / lineHeight;
+	int			tex_x; // = int(wallX * double(TEXWID));
+	int			tex_y; // = (int)texPos & (TEXHIE - 1);
+	double		step; // = 1.0 * TEXHIE / lineHeight;
 	double		tex_pos; // = (drawStart - h / 2 + lineHeight / 2) * step;
-	double		frame_time; //= (time - oldTime) / 1000.0; //frametime is the time this frame has taken, in seconds
-	double		move_speed; // = frameTime * 5.0; //the constant value is in squares/second
-	double		rot_speed; // = frameTime * 3.0; //the constant value is in radians/second
 	double		old_dir_x; // = dirX;
 	double		old_plane_x; // = planeX;
-	double		pos_z;
-	double		raw_dist;
 	double		*z_buf;
 	unsigned int	*color;
 }				t_w_cst;
@@ -236,7 +233,6 @@ typedef struct	s_all
 	t_all_spr	spr;
 	t_key		keys;
 	t_all_tex 	tex;
-	t_tex_info	tex_inf;
 }				t_all;
 
 void			ft_init_all(t_all *all);
@@ -260,7 +256,7 @@ int				ft_map_soft_anal(t_all *all, char *line, char *head);
 int				ft_map_copy(void *head, char *all, int len);
 int				ft_map_search(t_all *all, char *line);
 int				ft_map_init(t_all *all, t_list *list, int len, int lst_size);
-int				ft_map_hard_anal(t_all *all, char **array, int i, int j);
+void			ft_map_hard_anal(t_all *all, char **array, int i, int j);
 int				ft_map_anal(t_all *all);
 int				ft_map_size(t_all *all, t_list *list);
 int				ft_map_parse(t_all *all, int fd, t_list **list);
@@ -274,10 +270,41 @@ void			ft_draw(t_all *all);
 void			ft_fl_ce_cst(t_all *all);
 void			get_textures_info(t_all *all);
 void			get_textures_addr(t_all *all);
-void get_img_spr(t_all *all);
-void get_addr_spr(t_all *all);
-
-
-void			ft_print(t_all *mprms);
+void			get_img_spr(t_all *all);
+void			get_addr_spr(t_all *all);
+int				ft_shut_down();
+void			ft_scr_sh(t_all *all);
+void			get_img_spr(t_all *all);
+void			get_addr_spr(t_all *all);
+void			ft_get_scr(t_all *all);
+void			ft_spr_swp(t_all *all, int i, int j);
+void			ft_q_sort(t_all *all, int first, int last);
+void			cal_sort(t_all *all);
+void			my_mlx_pixel_put(t_all *all, int x, int y, int color);
+int				ft_shut_down();
+unsigned int	*ft_pixel_take_spr(t_tex tex, int x, int y);
+unsigned int	*ft_pixel_take(t_tex_info *tex, int x, int y);
+void 			ft_mv_fwd(t_all *all);
+void 			ft_mv_bck(t_all *all);
+void			ft_mv_lft(t_all *all);
+void			ft_mv_rgt(t_all *all);
+void			ft_rot_lft(t_all *all);
+void			ft_rot_rgt(t_all *all);
+int				ft_key_ev(t_all *all);
+int				ft_key_prs(int key, t_all *all);
+int				ft_key_rel(int key, t_all *all);
+void			ft_fl_ce_cst(t_all *all);
+void			ft_key_init(t_all *all);
+void			ft_all_mlx(t_all *all);
+void			ft_che_arg(char *line);
+void			ft_draw_spr1(t_all *all, int v_mv_scr, int i);
+void			ft_draw_spr2(t_all *all, int y, int v_mv_scr, int stripe);
+void			ft_draw_spr(t_all *all);
+void			ft_draw_util(t_all * all);
+void			ft_draw1(t_all *all, int x);
+void			ft_draw2(t_all *all);
+void			ft_draw3(t_all *all, int x);
+void			ft_draw4(t_all *all, int x);
+void			ft_draw5(t_all *all, int x, int y);
 
 #endif

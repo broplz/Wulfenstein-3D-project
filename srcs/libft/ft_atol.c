@@ -16,12 +16,15 @@ long			ft_atol(char **str)
 	res = 0;
 	while (**str && **str >= '0' && **str <= '9')
 	{
-		res = res * 10 + (**str - 48);
+		if (res < 21474836)
+		{
+			res = res * 10 + (**str - 48);
+			if ((res) > MAX_LONG)
+				return (-1);
+			if ((res) < 0)
+				return (-1);
+		}
 		++(*str);
-		if ((res) > MAX_LONG)
-			return (-1);
-		if ((res) < 0)
-			return (-1);
 	}
 	return (res);
 }
