@@ -22,7 +22,7 @@ LIB_DIR 		= ./srcs/libft
 LIB_NAME		= libft.a
 OPENGL			= -framework OpenGL
 APPKIT			= -framework AppKit
-SRC_PATH		= ./include srcs srsc/r_cast srcs/parser /srcs/libft
+SRC_PATH		= srcs srcs/parser /srcs/libft srsc/r_cast
 SRC_LIST		= $(wildcard $(dir)/*.c)
 SRC				= $(foreach dir, $(SRC_PATH), $(SRC_LIST))
 PROJ_OBJS		= $(SRC:.c=.o)
