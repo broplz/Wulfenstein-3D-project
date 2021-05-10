@@ -1,6 +1,6 @@
 #include "../include/cub3d.h"
 
-void	ft_draw_util(t_all * all)
+void	ft_draw_util(t_all *all)
 {
 	if (all->ray.ray_dir_y == 0)
 		all->ray.delta_dist_x = 0;

@@ -6,7 +6,7 @@
 /*   By: hcherrie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 15:55:22 by hcherrie          #+#    #+#             */
-/*   Updated: 2021/03/29 04:56:53 by broplz           ###   ########.fr       */
+/*   Updated: 2021/05/10 00:47:57 by broplz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ char	*ft_strjoin_gnl(char *s1, char *s2)
 	head = s1;
 	if (!s1 || !s2)
 		return (NULL);
-	res = (char *)malloc(sizeof(char) * (ft_strlen_gnl(s1) + ft_strlen_gnl(s2) + 1));
+	res = (char *)malloc(sizeof(char) * (ft_strlen_gnl(s1) +
+	ft_strlen_gnl(s2) + 1));
 	g1 = res;
 	if (res == NULL)
 		return (NULL);

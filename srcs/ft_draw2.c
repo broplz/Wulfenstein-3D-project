@@ -6,21 +6,24 @@ void	ft_draw2(t_all *all)
 	{
 		all->ray.step_x = -1;
 		all->ray.side_dist_x = (all->plr.pos_x - all->ray.map_x)
-							   * all->ray.delta_dist_x;
-	} else
+		* all->ray.delta_dist_x;
+	}
+	else
 	{
 		all->ray.step_x = 1;
 		all->ray.side_dist_x = (all->ray.map_x + 1.0 - all->plr.pos_x)
-							   * all->ray.delta_dist_x;
+		* all->ray.delta_dist_x;
 	}
-	if (all->ray.ray_dir_y < 0) {
+	if (all->ray.ray_dir_y < 0)
+	{
 		all->ray.step_y = -1;
 		all->ray.side_dist_y = (all->plr.pos_y - all->ray.map_y) *
-							   all->ray.delta_dist_y;
-	} else
+		all->ray.delta_dist_y;
+	}
+	else
 	{
 		all->ray.step_y = 1;
 		all->ray.side_dist_y = (all->ray.map_y + 1.0 - all->plr.pos_y) *
-							   all->ray.delta_dist_y;
+		all->ray.delta_dist_y;
 	}
 }

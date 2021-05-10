@@ -13,7 +13,8 @@ void		ft_q_sort(t_all *all, int first, int last)
 		j = last;
 		while (i < j)
 		{
-			while (all->spr.arr_spr[i].dist >= all->spr.arr_spr[midlle].dist && i < last)
+			while (all->spr.arr_spr[i].dist >= all->spr.arr_spr[midlle].dist
+				&& i < last)
 				i++;
 			while (all->spr.arr_spr[j].dist < all->spr.arr_spr[midlle].dist)
 				j--;
