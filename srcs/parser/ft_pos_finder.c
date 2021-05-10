@@ -1,5 +1,42 @@
 #include "../../include/cub3d.h"
 
+void	ft_orient_es(t_all *all)
+{
+	if (all->co.or == 'E')
+	{
+		all->plr.dir_x = 0.0;
+		all->plr.dir_y = 1.0;
+		all->plr.plane_x = 0.66;
+		all->plr.plane_y = 0.0;
+	}
+	if (all->co.or == 'S')
+	{
+		all->plr.dir_x = 1.0;
+		all->plr.dir_y = 0.0;
+		all->plr.plane_x = 0.0;
+		all->plr.plane_y = -0.66;
+	}
+}
+
+void	ft_orient_nw(t_all *all)
+{
+	if (all->co.or == 'N')
+	{
+		all->plr.dir_x = -1.0;
+		all->plr.dir_y = 0.0;
+		all->plr.plane_x = 0.0;
+		all->plr.plane_y = 0.66;
+	}
+	if (all->co.or == 'W')
+	{
+		all->plr.dir_x = 0.0;
+		all->plr.dir_y = -1.0;
+		all->plr.plane_x = -0.66;
+		all->plr.plane_y = 0.0;
+	}
+	ft_orient_es(all);
+}
+
 int		ft_pos_finder(t_all *all)
 {
 	int	i;
@@ -7,7 +44,6 @@ int		ft_pos_finder(t_all *all)
 
 	i = 0;
 	j = 0;
-
 	while (i < all->map.lst_size)
 	{
 		while (j < all->map.len)
@@ -26,34 +62,6 @@ int		ft_pos_finder(t_all *all)
 		j = 0;
 		i++;
 	}
-
-	if (all->co.or == 'N')
-	{
-		all->plr.dir_x = -1.0;
-		all->plr.dir_y = 0.0;
-		all->plr.plane_x = 0.0;
-		all->plr.plane_y = 0.66;
-	}
-	if (all->co.or == 'W')
-	{
-		all->plr.dir_x = 0.0;
-		all->plr.dir_y = -1.0;
-		all->plr.plane_x = -0.66;
-		all->plr.plane_y = 0.0;
-	}
-	if (all->co.or == 'E')
-	{
-		all->plr.dir_x = 0.0;
-		all->plr.dir_y = 1.0;
-		all->plr.plane_x = 0.66;
-		all->plr.plane_y = 0.0;
-	}
-	if (all->co.or == 'S')
-	{
-		all->plr.dir_x = 1.0;
-		all->plr.dir_y = 0.0;
-		all->plr.plane_x = 0.0;
-		all->plr.plane_y = -0.66;
-	}
+	ft_orient_nw(all);
 	return (0);
 }

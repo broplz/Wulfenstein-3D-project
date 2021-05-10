@@ -18,8 +18,10 @@ int		ft_main_parser(t_all *all, int fd, t_list *par, t_list *map)
 	if (all->co.par_fl)
 		ft_map_parse(all, fd, &map);
 	ft_pos_finder(all);
-	all->par.col.ce = cre_rgb(all->par.col.cr, all->par.col.cg, all->par.col.cb);
-	all->par.col.fl = cre_rgb(all->par.col.fr, all->par.col.fg, all->par.col.fb);
+	all->par.col.ce = cre_rgb(all->par.col.cr,
+	all->par.col.cg, all->par.col.cb);
+	all->par.col.fl = cre_rgb(all->par.col.fr,
+	all->par.col.fg, all->par.col.fb);
 	get_textures_info(all);
 	get_textures_addr(all);
 	get_img_spr(all);

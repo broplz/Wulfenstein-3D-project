@@ -20,7 +20,7 @@ void	ft_sanya(t_all *all, char *line)
 	}
 }
 
-int	ft_map_parse(t_all *all, int fd, t_list **list)
+int		ft_map_parse(t_all *all, int fd, t_list **list)
 {
 	char	*line;
 
@@ -39,7 +39,6 @@ int	ft_map_parse(t_all *all, int fd, t_list **list)
 		ft_lstadd_back(list, ft_lstnew(line));
 	else if (line)
 		ft_free_line(&line);
-
 	if (all->co.anal == 0)
 		ft_error_close("add Player and Direction");
 	if (all->spr.count && !(all->spr.arr_spr =

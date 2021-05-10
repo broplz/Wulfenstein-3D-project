@@ -20,7 +20,7 @@ int		ft_par_parse(t_all *all, int fd, t_list **list)
 	line = NULL;
 	temp = NULL;
 	while (all->co.par_fl && ft_get_valid(all) != 8 && get_next_line(fd, &line)
-		   && (temp = line) && ft_param_parser(all, line))
+		&& (temp = line) && ft_param_parser(all, line))
 		ft_lstadd_back(list, ft_lstnew(temp));
 	if (all->par.col.cb == -1 || all->par.col.cg == -1
 		|| all->par.col.cr == -1 || all->par.col.fb == -1

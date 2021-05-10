@@ -14,7 +14,7 @@
 
 int		ft_valid_clr(char *str)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (str[i])

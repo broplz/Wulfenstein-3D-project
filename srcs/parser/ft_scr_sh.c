@@ -46,12 +46,12 @@ void	ft_hdr_bmp(int fd, int f_size)
 	write(fd, hdr, 14);
 }
 
-void		ft_scr_sh(t_all *all)
+void	ft_scr_sh(t_all *all)
 {
-	int fd;
-	int f_size;
-	int hei;
-	int l_len;
+	int	fd;
+	int	f_size;
+	int	hei;
+	int	l_len;
 
 	fd = open("scr.bmp", O_CREAT | O_WRONLY | O_TRUNC, 0655);
 	if (fd < 0)
@@ -64,7 +64,8 @@ void		ft_scr_sh(t_all *all)
 	l_len = all->par.res.x * all->data.bpp / 8;
 	while (hei > -1)
 	{
-		write(fd, (unsigned char *)(all->data.addr + hei * all->data.ln_len), l_len);
+		write(fd, (unsigned char *)(all->data.addr + hei * all->data.ln_len),
+		l_len);
 		hei--;
 	}
 	close(fd);

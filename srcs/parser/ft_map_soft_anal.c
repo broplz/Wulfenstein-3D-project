@@ -26,8 +26,8 @@ void	ft_get_ori(t_all *all, char ch)
 
 void	ft_her_poimi(t_all *all, char *line)
 {
-		if (line[0] == '\n' && all->co.map_fl)
-			ft_error_close("Invalid map");
+	if (line[0] == '\n' && all->co.map_fl)
+		ft_error_close("Invalid map");
 }
 
 int		ft_map_soft_anal(t_all *all, char *line, char *head)

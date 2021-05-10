@@ -19,8 +19,11 @@ int		ft_map_search(t_all *all, char *line)
 	while (*line == ' ')
 		line++;
 	if ((*line) == '1' || (*line) == '\0')
-		return ((all->co.map_fl = 1) + (all->co.par_fl = 2) - 2);
+	{
+		all->co.map_fl = 1;
+		return (1 + (all->co.par_fl = 2) - 2);
+	}
 	else
 		ft_error_close("String with trash before map");
-	return  (0);
+	return (0);
 }
