@@ -6,7 +6,7 @@
 /*   By: hcherrie <hcherrie@student.21-schoo>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 01:07:59 by hcherrie          #+#    #+#             */
-/*   Updated: 2021/05/10 00:47:57 by broplz           ###   ########.fr       */
+/*   Updated: 2021/05/10 14:01:15 by hcherrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 char	**ft_run(char **str)
 {
 	while (**str && (**str == ' ' || **str == '\n' || **str == '\t' ||
-		**str == '\v' || **str == '\f' || **str == '\r'))
+				**str == '\v' || **str == '\f' || **str == '\r'))
 		++(*str);
 	return (str);
 }
 
-int			ft_atoi(char **str)
+int		ft_atoi(char **str)
 {
 	long	res;
 	long	negative;

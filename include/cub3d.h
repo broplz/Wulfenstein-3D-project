@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cub3d.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hcherrie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/05/10 14:02:06 by hcherrie          #+#    #+#             */
+/*   Updated: 2021/05/10 14:02:07 by hcherrie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CUB3D_H
 # define CUB3D_H
 
@@ -288,7 +300,7 @@ void				ft_all_mlx(t_all *all);
 void				ft_che_arg(char *line);
 void				ft_draw_spr1(t_all *all, int v_mv_scr, int i);
 void				ft_draw_spr2(t_all *all, int y, int v_mv_scr, int stripe);
-void				ft_draw_spr3(t_all *all, int v_mv_scr, int i);
+void				ft_draw_spr3(t_all *all, int i);
 void				ft_draw_spr(t_all *all);
 void				ft_draw_util(t_all *all);
 void				ft_draw1(t_all *all, int x);
